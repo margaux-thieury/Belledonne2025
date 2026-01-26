@@ -78,7 +78,7 @@ window.Quarto = {
 
 <body class="quarto-light">
 
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Enregistrements acoustiques 2025 dans la RNCFS de Belledonne</h1>
@@ -106,53 +106,51 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
   <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#la-pose-des-enregistreurs-audiomoth-et-la-météo-sur-belledonne" id="toc-la-pose-des-enregistreurs-audiomoth-et-la-météo-sur-belledonne" class="nav-link active" data-scroll-target="#la-pose-des-enregistreurs-audiomoth-et-la-météo-sur-belledonne">La pose des enregistreurs audiomoth et la météo sur Belledonne</a></li>
-  <li><a href="#spectrogramme-long-terme" id="toc-spectrogramme-long-terme" class="nav-link" data-scroll-target="#spectrogramme-long-terme">Spectrogramme long terme</a></li>
-  <li><a href="#leq" id="toc-leq" class="nav-link" data-scroll-target="#leq">Leq</a></li>
+  <li><a href="#cadre-méthodologique-et-contexte-environnemental" id="toc-cadre-méthodologique-et-contexte-environnemental" class="nav-link active" data-scroll-target="#cadre-méthodologique-et-contexte-environnemental">Cadre méthodologique et contexte environnemental</a>
+  <ul class="collapse">
+  <li><a href="#déploiement-des-enregistreurs" id="toc-déploiement-des-enregistreurs" class="nav-link" data-scroll-target="#déploiement-des-enregistreurs">Déploiement des enregistreurs</a></li>
+  <li><a href="#météo" id="toc-météo" class="nav-link" data-scroll-target="#météo">Météo</a></li>
+  </ul></li>
   <li><a href="#répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins" id="toc-répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins" class="nav-link" data-scroll-target="#répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins">Répartition de l’utilisation de l’espace des brebis et des bouquetins</a>
   <ul class="collapse">
-  <li><a href="#répartition-de-lutilisation-de-lespace-des-brebis-en-cumulé-sur-les-années-2018-à-2025" id="toc-répartition-de-lutilisation-de-lespace-des-brebis-en-cumulé-sur-les-années-2018-à-2025" class="nav-link" data-scroll-target="#répartition-de-lutilisation-de-lespace-des-brebis-en-cumulé-sur-les-années-2018-à-2025">Répartition de l’utilisation de l’espace des brebis en cumulé sur les années 2018 à 2025</a></li>
-  <li><a href="#répartition-de-lutilisation-de-lespace-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre" id="toc-répartition-de-lutilisation-de-lespace-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre" class="nav-link" data-scroll-target="#répartition-de-lutilisation-de-lespace-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre">Répartition de l’utilisation de l’espace des bouquetins en cumulé sur les années 2017 à 2025 (uniquement sur les mois de juin à octobre)</a></li>
-  <li><a href="#répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année" id="toc-répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année" class="nav-link" data-scroll-target="#répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année">Répartition de l’utilisation de l’espace des brebis pour chaque année</a></li>
+  <li><a href="#chargement-des-brebis-en-cumulé-sur-les-années-2018-à-2025" id="toc-chargement-des-brebis-en-cumulé-sur-les-années-2018-à-2025" class="nav-link" data-scroll-target="#chargement-des-brebis-en-cumulé-sur-les-années-2018-à-2025">Chargement des brebis en cumulé sur les années 2018 à 2025</a></li>
+  <li><a href="#chargement-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre" id="toc-chargement-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre" class="nav-link" data-scroll-target="#chargement-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre">Chargement des bouquetins en cumulé sur les années 2017 à 2025 (uniquement sur les mois de juin à octobre)</a></li>
+  <li><a href="#zoom-sur-la-répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année" id="toc-zoom-sur-la-répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année" class="nav-link" data-scroll-target="#zoom-sur-la-répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année">Zoom sur la répartition de l’utilisation de l’espace des brebis pour chaque année</a></li>
   </ul></li>
+  <li><a href="#paysages-sonores-enregistrés" id="toc-paysages-sonores-enregistrés" class="nav-link" data-scroll-target="#paysages-sonores-enregistrés">Paysages sonores enregistrés</a>
+  <ul class="collapse">
+  <li><a href="#spectrogramme-long-terme" id="toc-spectrogramme-long-terme" class="nav-link" data-scroll-target="#spectrogramme-long-terme">Spectrogramme long terme</a></li>
+  <li><a href="#leq" id="toc-leq" class="nav-link" data-scroll-target="#leq">Leq</a></li>
+  </ul></li>
+  <li><a href="#les-insectes-présents-dans-la-rncfs" id="toc-les-insectes-présents-dans-la-rncfs" class="nav-link" data-scroll-target="#les-insectes-présents-dans-la-rncfs">Les insectes présents dans la RNCFS</a></li>
   <li><a href="#ntempi" id="toc-ntempi" class="nav-link" data-scroll-target="#ntempi">NTempi</a>
   <ul class="collapse">
+  <li><a href="#création-de-soundscapes-de-synthèse" id="toc-création-de-soundscapes-de-synthèse" class="nav-link" data-scroll-target="#création-de-soundscapes-de-synthèse">Création de soundscapes de synthèse</a></li>
   <li><a href="#evaluation-de-ntempi-avec-des-soundscapes-de-synthèse" id="toc-evaluation-de-ntempi-avec-des-soundscapes-de-synthèse" class="nav-link" data-scroll-target="#evaluation-de-ntempi-avec-des-soundscapes-de-synthèse">Evaluation de Ntempi avec des soundscapes de synthèse</a></li>
-  <li><a href="#params-et-denoising" id="toc-params-et-denoising" class="nav-link" data-scroll-target="#params-et-denoising">Params et denoising</a></li>
-  </ul></li>
-  <li><a href="#traitement-des-enregistrements-acoustiques" id="toc-traitement-des-enregistrements-acoustiques" class="nav-link" data-scroll-target="#traitement-des-enregistrements-acoustiques">Traitement des enregistrements acoustiques</a>
-  <ul class="collapse">
-  <li><a href="#prétraitement-des-fichiers-audio" id="toc-prétraitement-des-fichiers-audio" class="nav-link" data-scroll-target="#prétraitement-des-fichiers-audio">1. Prétraitement des fichiers audio</a>
-  <ul class="collapse">
-  <li><a href="#filtre-coupe-bande-highpass" id="toc-filtre-coupe-bande-highpass" class="nav-link" data-scroll-target="#filtre-coupe-bande-highpass">1.1 Filtre coupe-bande (highpass)</a></li>
-  <li><a href="#filtrage-du-bruit-de-fond-stationnaire" id="toc-filtrage-du-bruit-de-fond-stationnaire" class="nav-link" data-scroll-target="#filtrage-du-bruit-de-fond-stationnaire">1.2 Filtrage du bruit de fond stationnaire</a></li>
-  </ul></li>
-  <li><a href="#impact-sur-le-calcul-du-leq" id="toc-impact-sur-le-calcul-du-leq" class="nav-link" data-scroll-target="#impact-sur-le-calcul-du-leq">2. Impact sur le calcul du Leq</a>
-  <ul class="collapse">
-  <li><a href="#problématique" id="toc-problématique" class="nav-link" data-scroll-target="#problématique">2.1 Problématique</a></li>
-  <li><a href="#conséquences-pour-lanalyse" id="toc-conséquences-pour-lanalyse" class="nav-link" data-scroll-target="#conséquences-pour-lanalyse">2.2 Conséquences pour l’analyse</a></li>
-  <li><a href="#recommandations-méthodologiques" id="toc-recommandations-méthodologiques" class="nav-link" data-scroll-target="#recommandations-méthodologiques">2.3 Recommandations méthodologiques</a></li>
-  </ul></li>
-  <li><a href="#méthodologie-finale-appliquée" id="toc-méthodologie-finale-appliquée" class="nav-link" data-scroll-target="#méthodologie-finale-appliquée">3. Méthodologie finale appliquée</a></li>
+  <li><a href="#ntempi-sur-nos-enregistrements-réels" id="toc-ntempi-sur-nos-enregistrements-réels" class="nav-link" data-scroll-target="#ntempi-sur-nos-enregistrements-réels">Ntempi sur nos enregistrements réels</a></li>
   </ul></li>
   </ul>
 </nav>
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
 
-<section id="la-pose-des-enregistreurs-audiomoth-et-la-météo-sur-belledonne" class="level2">
-<h2 class="anchored" data-anchor-id="la-pose-des-enregistreurs-audiomoth-et-la-météo-sur-belledonne">La pose des enregistreurs audiomoth et la météo sur Belledonne</h2>
-<p>Durant l’été 2025, 32 enregistreurs de type audiomoth ont été posé dans la RNCFS de Belledonne. Leur emplacement est visible sur la carte ci-dessous. (point cliquable pour connaitre le nom de l’enregistreur)</p>
+<section id="cadre-méthodologique-et-contexte-environnemental" class="level1 page-columns page-full">
+<h1>Cadre méthodologique et contexte environnemental</h1>
+<section id="déploiement-des-enregistreurs" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="déploiement-des-enregistreurs">Déploiement des enregistreurs</h2>
+<p>Durant l’été 2025, 32 enregistreurs de type audiomoth ont été posé dans la RNCFS de Belledonne. Leur emplacement est visible sur la carte ci-dessous.</p>
 <div id="cell-map" class="cell" data-execution_count="1">
 <div id="map" class="cell-output cell-output-display" data-execution_count="1">
 <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
@@ -174,7 +172,7 @@ window.Quarto = {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_051f6e8b894a5267bc794ecff1581c87 {
+                #map_0fa8d7d4df4fc74270d71318f4fffb13 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -221,14 +219,14 @@ window.Quarto = {
     <i class=&quot;fa fa-circle&quot; style=&quot;color:blue&quot;></i> Lande fraîche<br>
 </div>
     
-            <div class=&quot;folium-map&quot; id=&quot;map_051f6e8b894a5267bc794ecff1581c87&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_0fa8d7d4df4fc74270d71318f4fffb13&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_051f6e8b894a5267bc794ecff1581c87 = L.map(
-                &quot;map_051f6e8b894a5267bc794ecff1581c87&quot;,
+            var map_0fa8d7d4df4fc74270d71318f4fffb13 = L.map(
+                &quot;map_0fa8d7d4df4fc74270d71318f4fffb13&quot;,
                 {
                     center: [45.215862625, 6.1169473687187494],
                     crs: L.CRS.EPSG3857,
@@ -245,7 +243,7 @@ window.Quarto = {
 
         
     
-            var tile_layer_5efa40c7feb01f4298a9fcd736e8d53b = L.tileLayer(
+            var tile_layer_ac9160686b5b7075df92bf4c6c2751af = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -262,10 +260,10 @@ window.Quarto = {
             );
         
     
-            tile_layer_5efa40c7feb01f4298a9fcd736e8d53b.addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            tile_layer_ac9160686b5b7075df92bf4c6c2751af.addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-            var tile_layer_d2cde08a6bcd4c35c146137f834ee9bc = L.tileLayer(
+            var tile_layer_e7359dc7ff8419c9c098ea834f6880f7 = L.tileLayer(
                 &quot;https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -282,770 +280,772 @@ window.Quarto = {
             );
         
     
-            tile_layer_d2cde08a6bcd4c35c146137f834ee9bc.addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            tile_layer_e7359dc7ff8419c9c098ea834f6880f7.addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-            var circle_marker_ca6b968b240587e2236205e67dd5e1b0 = L.circleMarker(
+            var circle_marker_01260bb0a80bd3860618eea049ba02eb = L.circleMarker(
                 [45.21207417, 6.095794383],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_af711df91f1ec58cae4731360a9e077b = L.popup({
+        var popup_53ed397d9bcc31655eb1bdb7f05b6e42 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_0d2e2748fa76b7a595596a1887266e71 = $(`<div id=&quot;html_0d2e2748fa76b7a595596a1887266e71&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH17<br></div>`)[0];
-                popup_af711df91f1ec58cae4731360a9e077b.setContent(html_0d2e2748fa76b7a595596a1887266e71);
+                var html_a7801b5f811897a9dea82be683fd6e81 = $(`<div id=&quot;html_a7801b5f811897a9dea82be683fd6e81&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH17<br></div>`)[0];
+                popup_53ed397d9bcc31655eb1bdb7f05b6e42.setContent(html_a7801b5f811897a9dea82be683fd6e81);
             
         
 
-        circle_marker_ca6b968b240587e2236205e67dd5e1b0.bindPopup(popup_af711df91f1ec58cae4731360a9e077b)
+        circle_marker_01260bb0a80bd3860618eea049ba02eb.bindPopup(popup_53ed397d9bcc31655eb1bdb7f05b6e42)
         ;
 
         
     
     
-            var circle_marker_3d2990775cef1fcdcd37fd936048130a = L.circleMarker(
+            var circle_marker_490a0ca6d64b7ef33bdf6f63272573fd = L.circleMarker(
                 [45.21444744, 6.096619178],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_c5cad5e6fcf0c7c01ca8c6d7fde1c843 = L.popup({
+        var popup_6399316c3ac877033297a520196b3bef = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_6980c60aa019ce3a31b2142663962892 = $(`<div id=&quot;html_6980c60aa019ce3a31b2142663962892&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I12<br></div>`)[0];
-                popup_c5cad5e6fcf0c7c01ca8c6d7fde1c843.setContent(html_6980c60aa019ce3a31b2142663962892);
+                var html_22cc76a651104803805a5b2c6481a7bd = $(`<div id=&quot;html_22cc76a651104803805a5b2c6481a7bd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I12<br></div>`)[0];
+                popup_6399316c3ac877033297a520196b3bef.setContent(html_22cc76a651104803805a5b2c6481a7bd);
             
         
 
-        circle_marker_3d2990775cef1fcdcd37fd936048130a.bindPopup(popup_c5cad5e6fcf0c7c01ca8c6d7fde1c843)
+        circle_marker_490a0ca6d64b7ef33bdf6f63272573fd.bindPopup(popup_6399316c3ac877033297a520196b3bef)
         ;
 
         
     
     
-            var circle_marker_1ecd3a926ba44f4c1c4c6f34bdacb2a3 = L.circleMarker(
+            var circle_marker_7a0752eff404a55ba3856ebe61777382 = L.circleMarker(
                 [45.21272038, 6.100356001],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_a796576affd5d2bb96d68d70a54a316e = L.popup({
+        var popup_850ba7df6bc19d65b10a201bbd879391 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_3f2346a337674c1371120e4cc0d85549 = $(`<div id=&quot;html_3f2346a337674c1371120e4cc0d85549&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM09<br></div>`)[0];
-                popup_a796576affd5d2bb96d68d70a54a316e.setContent(html_3f2346a337674c1371120e4cc0d85549);
+                var html_943d85783ba81321cfd1ab54166514ae = $(`<div id=&quot;html_943d85783ba81321cfd1ab54166514ae&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM09<br></div>`)[0];
+                popup_850ba7df6bc19d65b10a201bbd879391.setContent(html_943d85783ba81321cfd1ab54166514ae);
             
         
 
-        circle_marker_1ecd3a926ba44f4c1c4c6f34bdacb2a3.bindPopup(popup_a796576affd5d2bb96d68d70a54a316e)
+        circle_marker_7a0752eff404a55ba3856ebe61777382.bindPopup(popup_850ba7df6bc19d65b10a201bbd879391)
         ;
 
         
     
     
-            var circle_marker_bc2a60e6ad59492e9ee536caf2bab500 = L.circleMarker(
+            var circle_marker_d780acfca693c96bd0cf1d644d5ecb04 = L.circleMarker(
                 [45.21281543, 6.10040294],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_9165454723d56bf10ab119ce6c62123a = L.popup({
+        var popup_0b8be6c7774a9935b93f0f6497acd13f = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_672ead668722999f5f994b1c6fad0c78 = $(`<div id=&quot;html_672ead668722999f5f994b1c6fad0c78&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I07<br></div>`)[0];
-                popup_9165454723d56bf10ab119ce6c62123a.setContent(html_672ead668722999f5f994b1c6fad0c78);
+                var html_83e4c603e172705dc63386b6e8a84d99 = $(`<div id=&quot;html_83e4c603e172705dc63386b6e8a84d99&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I07<br></div>`)[0];
+                popup_0b8be6c7774a9935b93f0f6497acd13f.setContent(html_83e4c603e172705dc63386b6e8a84d99);
             
         
 
-        circle_marker_bc2a60e6ad59492e9ee536caf2bab500.bindPopup(popup_9165454723d56bf10ab119ce6c62123a)
+        circle_marker_d780acfca693c96bd0cf1d644d5ecb04.bindPopup(popup_0b8be6c7774a9935b93f0f6497acd13f)
         ;
 
         
     
     
-            var circle_marker_5e2cbb6272ccd717d09c57f0d270e303 = L.circleMarker(
+            var circle_marker_885bf8bd29ea849906d4b93e59300d7e = L.circleMarker(
                 [45.21866932, 6.133361726],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_d88159384736dc2bb045928ad2b4a229 = L.popup({
+        var popup_905959b58bdae84020ae7f9988c161bc = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_571caf2c29cdbc51950e8390bd204d40 = $(`<div id=&quot;html_571caf2c29cdbc51950e8390bd204d40&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM02<br></div>`)[0];
-                popup_d88159384736dc2bb045928ad2b4a229.setContent(html_571caf2c29cdbc51950e8390bd204d40);
+                var html_7b26bae46ed597baa1ecff4100016b47 = $(`<div id=&quot;html_7b26bae46ed597baa1ecff4100016b47&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM02<br></div>`)[0];
+                popup_905959b58bdae84020ae7f9988c161bc.setContent(html_7b26bae46ed597baa1ecff4100016b47);
             
         
 
-        circle_marker_5e2cbb6272ccd717d09c57f0d270e303.bindPopup(popup_d88159384736dc2bb045928ad2b4a229)
+        circle_marker_885bf8bd29ea849906d4b93e59300d7e.bindPopup(popup_905959b58bdae84020ae7f9988c161bc)
         ;
 
         
     
     
-            var circle_marker_3206275c2b0acb1db8c634b25b74deb4 = L.circleMarker(
+            var circle_marker_125d2473613ac8cf600e632ceff7275e = L.circleMarker(
                 [45.21518255, 6.129357805],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_6d33164a1bb75a19af81083581ed8078 = L.popup({
+        var popup_ea6c2bc2766e13abe7ead233132e98f0 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_e952c79f98749eaa198dd4f5a94c625b = $(`<div id=&quot;html_e952c79f98749eaa198dd4f5a94c625b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I10<br></div>`)[0];
-                popup_6d33164a1bb75a19af81083581ed8078.setContent(html_e952c79f98749eaa198dd4f5a94c625b);
+                var html_cfa0eca9eed8471596414a0d8534d2ad = $(`<div id=&quot;html_cfa0eca9eed8471596414a0d8534d2ad&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I10<br></div>`)[0];
+                popup_ea6c2bc2766e13abe7ead233132e98f0.setContent(html_cfa0eca9eed8471596414a0d8534d2ad);
             
         
 
-        circle_marker_3206275c2b0acb1db8c634b25b74deb4.bindPopup(popup_6d33164a1bb75a19af81083581ed8078)
+        circle_marker_125d2473613ac8cf600e632ceff7275e.bindPopup(popup_ea6c2bc2766e13abe7ead233132e98f0)
         ;
 
         
     
     
-            var circle_marker_c71f835d374bce6f24e22736e1247482 = L.circleMarker(
+            var circle_marker_17cbe2725cb0986d9b90bcd977d0d653 = L.circleMarker(
                 [45.21466606, 6.128253535],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_60e753bdb374c86afd858d9f881fa13c = L.popup({
+        var popup_7c1b024da880bbf8209ad31a2c57e4e4 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_67c5688c6badb87acd8107f1cecd8c9a = $(`<div id=&quot;html_67c5688c6badb87acd8107f1cecd8c9a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I14<br></div>`)[0];
-                popup_60e753bdb374c86afd858d9f881fa13c.setContent(html_67c5688c6badb87acd8107f1cecd8c9a);
+                var html_226c76599c228563a0e947382172aabf = $(`<div id=&quot;html_226c76599c228563a0e947382172aabf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I14<br></div>`)[0];
+                popup_7c1b024da880bbf8209ad31a2c57e4e4.setContent(html_226c76599c228563a0e947382172aabf);
             
         
 
-        circle_marker_c71f835d374bce6f24e22736e1247482.bindPopup(popup_60e753bdb374c86afd858d9f881fa13c)
+        circle_marker_17cbe2725cb0986d9b90bcd977d0d653.bindPopup(popup_7c1b024da880bbf8209ad31a2c57e4e4)
         ;
 
         
     
     
-            var circle_marker_56cc4edfc66f2c1c3df9caa69dce3a2a = L.circleMarker(
+            var circle_marker_ed9c55587ebb7792054e2db82564429f = L.circleMarker(
                 [45.212241, 6.125280306],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_bbdd25aed3d059c9163416e84b6a1b25 = L.popup({
+        var popup_169fa0276817977eb6014f912046a041 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_6308ef742af751a5efd0e575d1f6f36f = $(`<div id=&quot;html_6308ef742af751a5efd0e575d1f6f36f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I27<br></div>`)[0];
-                popup_bbdd25aed3d059c9163416e84b6a1b25.setContent(html_6308ef742af751a5efd0e575d1f6f36f);
+                var html_9695602f4eb9feb7aca24db193946ba7 = $(`<div id=&quot;html_9695602f4eb9feb7aca24db193946ba7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I27<br></div>`)[0];
+                popup_169fa0276817977eb6014f912046a041.setContent(html_9695602f4eb9feb7aca24db193946ba7);
             
         
 
-        circle_marker_56cc4edfc66f2c1c3df9caa69dce3a2a.bindPopup(popup_bbdd25aed3d059c9163416e84b6a1b25)
+        circle_marker_ed9c55587ebb7792054e2db82564429f.bindPopup(popup_169fa0276817977eb6014f912046a041)
         ;
 
         
     
     
-            var circle_marker_a133260d5415adfdfcedf11c57e6b111 = L.circleMarker(
+            var circle_marker_01181382fffadbd5f038013d4028bd9f = L.circleMarker(
                 [45.21151161, 6.124254037],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_935726556dd42ccefd52af67c6fa2e55 = L.popup({
+        var popup_29bdb7139fbc146df171a0dff9e0ba13 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_f248c116573885e2f2f65f9165a08c44 = $(`<div id=&quot;html_f248c116573885e2f2f65f9165a08c44&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I20<br></div>`)[0];
-                popup_935726556dd42ccefd52af67c6fa2e55.setContent(html_f248c116573885e2f2f65f9165a08c44);
+                var html_17ca6882ece0bd43981abcfb8cf3b6e0 = $(`<div id=&quot;html_17ca6882ece0bd43981abcfb8cf3b6e0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I20<br></div>`)[0];
+                popup_29bdb7139fbc146df171a0dff9e0ba13.setContent(html_17ca6882ece0bd43981abcfb8cf3b6e0);
             
         
 
-        circle_marker_a133260d5415adfdfcedf11c57e6b111.bindPopup(popup_935726556dd42ccefd52af67c6fa2e55)
+        circle_marker_01181382fffadbd5f038013d4028bd9f.bindPopup(popup_29bdb7139fbc146df171a0dff9e0ba13)
         ;
 
         
     
     
-            var circle_marker_0f16aae57fbeafda61d187b359882c17 = L.circleMarker(
+            var circle_marker_b57dbdac914ab7d82eaa8ca4420f5d66 = L.circleMarker(
                 [45.21699119, 6.119832302],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_d0e3c9f91bbee40bfdb774199b16a428 = L.popup({
+        var popup_489a635e97f29db177de8fe4bada83a0 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_2cf39665918b359b227a7cbd0422d517 = $(`<div id=&quot;html_2cf39665918b359b227a7cbd0422d517&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I26<br></div>`)[0];
-                popup_d0e3c9f91bbee40bfdb774199b16a428.setContent(html_2cf39665918b359b227a7cbd0422d517);
+                var html_e9b3c5dcd33fe77f2558eda3d6945f08 = $(`<div id=&quot;html_e9b3c5dcd33fe77f2558eda3d6945f08&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I26<br></div>`)[0];
+                popup_489a635e97f29db177de8fe4bada83a0.setContent(html_e9b3c5dcd33fe77f2558eda3d6945f08);
             
         
 
-        circle_marker_0f16aae57fbeafda61d187b359882c17.bindPopup(popup_d0e3c9f91bbee40bfdb774199b16a428)
+        circle_marker_b57dbdac914ab7d82eaa8ca4420f5d66.bindPopup(popup_489a635e97f29db177de8fe4bada83a0)
         ;
 
         
     
     
-            var circle_marker_474601669afcd430e4988652ae17f253 = L.circleMarker(
+            var circle_marker_b546674cf8121d5628ff7fba20b442eb = L.circleMarker(
                 [45.2120379, 6.105674651],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_896ac9a9b5e208bab73d34e8d19afd7c = L.popup({
+        var popup_60a034e9f16bf861c4123413b172d6ec = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_f960edfab090dce84f98ecf6816a0090 = $(`<div id=&quot;html_f960edfab090dce84f98ecf6816a0090&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I4<br></div>`)[0];
-                popup_896ac9a9b5e208bab73d34e8d19afd7c.setContent(html_f960edfab090dce84f98ecf6816a0090);
+                var html_f13644d1081a1f297f7bf078307d2c78 = $(`<div id=&quot;html_f13644d1081a1f297f7bf078307d2c78&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I4<br></div>`)[0];
+                popup_60a034e9f16bf861c4123413b172d6ec.setContent(html_f13644d1081a1f297f7bf078307d2c78);
             
         
 
-        circle_marker_474601669afcd430e4988652ae17f253.bindPopup(popup_896ac9a9b5e208bab73d34e8d19afd7c)
+        circle_marker_b546674cf8121d5628ff7fba20b442eb.bindPopup(popup_60a034e9f16bf861c4123413b172d6ec)
         ;
 
         
     
     
-            var circle_marker_153855014e006fc596554927f98d2961 = L.circleMarker(
+            var circle_marker_94b016b7a4bedbb557ec4696621d6275 = L.circleMarker(
                 [45.21193497, 6.105692581],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_139ce09abe8b4f12f9409867477336fb = L.popup({
+        var popup_b1d0cd34160c52cac97a20a025d8fa44 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_3ae09d37cf9ba6147b1321dacbd54077 = $(`<div id=&quot;html_3ae09d37cf9ba6147b1321dacbd54077&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH12<br></div>`)[0];
-                popup_139ce09abe8b4f12f9409867477336fb.setContent(html_3ae09d37cf9ba6147b1321dacbd54077);
+                var html_7295d208c6244587746519c425f0ed75 = $(`<div id=&quot;html_7295d208c6244587746519c425f0ed75&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH12<br></div>`)[0];
+                popup_b1d0cd34160c52cac97a20a025d8fa44.setContent(html_7295d208c6244587746519c425f0ed75);
             
         
 
-        circle_marker_153855014e006fc596554927f98d2961.bindPopup(popup_139ce09abe8b4f12f9409867477336fb)
+        circle_marker_94b016b7a4bedbb557ec4696621d6275.bindPopup(popup_b1d0cd34160c52cac97a20a025d8fa44)
         ;
 
         
     
     
-            var circle_marker_6ca713b4ff81a11b933a8dc3d78edb60 = L.circleMarker(
+            var circle_marker_56ef9e83e46117254f7d7f687953cc8a = L.circleMarker(
                 [45.21210615, 6.105555589],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_533b01db4c6bf9a0323dea9fcbea5629 = L.popup({
+        var popup_292f43fb3825f09e457881b55198b087 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_2e546fe342410251b9818495e80b988e = $(`<div id=&quot;html_2e546fe342410251b9818495e80b988e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH10<br></div>`)[0];
-                popup_533b01db4c6bf9a0323dea9fcbea5629.setContent(html_2e546fe342410251b9818495e80b988e);
+                var html_9e16198a1387e2b080680c4a249faf7b = $(`<div id=&quot;html_9e16198a1387e2b080680c4a249faf7b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH10<br></div>`)[0];
+                popup_292f43fb3825f09e457881b55198b087.setContent(html_9e16198a1387e2b080680c4a249faf7b);
             
         
 
-        circle_marker_6ca713b4ff81a11b933a8dc3d78edb60.bindPopup(popup_533b01db4c6bf9a0323dea9fcbea5629)
+        circle_marker_56ef9e83e46117254f7d7f687953cc8a.bindPopup(popup_292f43fb3825f09e457881b55198b087)
         ;
 
         
     
     
-            var circle_marker_8b11cf315317582d344351646da908c6 = L.circleMarker(
+            var circle_marker_413eb11649a544171c9c3c9ec7e3e618 = L.circleMarker(
                 [45.21225658, 6.105664279],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_80432f6ef1340707bf97b70c22a095f5 = L.popup({
+        var popup_84a6fa2a85c041f7261669b98834c21e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_6dcd15ed4c2e6078489fb07ad7a01110 = $(`<div id=&quot;html_6dcd15ed4c2e6078489fb07ad7a01110&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I19<br></div>`)[0];
-                popup_80432f6ef1340707bf97b70c22a095f5.setContent(html_6dcd15ed4c2e6078489fb07ad7a01110);
+                var html_8ce1ecac3ca1941f0e3df2b7ac059afe = $(`<div id=&quot;html_8ce1ecac3ca1941f0e3df2b7ac059afe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I19<br></div>`)[0];
+                popup_84a6fa2a85c041f7261669b98834c21e.setContent(html_8ce1ecac3ca1941f0e3df2b7ac059afe);
             
         
 
-        circle_marker_8b11cf315317582d344351646da908c6.bindPopup(popup_80432f6ef1340707bf97b70c22a095f5)
+        circle_marker_413eb11649a544171c9c3c9ec7e3e618.bindPopup(popup_84a6fa2a85c041f7261669b98834c21e)
         ;
 
         
     
     
-            var circle_marker_33bb1443215f5010788f7a6e0923f369 = L.circleMarker(
+            var circle_marker_336c820074419a633a962751be05af44 = L.circleMarker(
                 [45.21285173, 6.103917918],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_52b6847619e097938a7af8c29cf5c269 = L.popup({
+        var popup_27393aa423f1887fd9082116b6d1d1b6 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_df64cf848718f5453df1d827a5391ff2 = $(`<div id=&quot;html_df64cf848718f5453df1d827a5391ff2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I16<br></div>`)[0];
-                popup_52b6847619e097938a7af8c29cf5c269.setContent(html_df64cf848718f5453df1d827a5391ff2);
+                var html_3cae62f918bccbdd3baaf1b9a4c29ade = $(`<div id=&quot;html_3cae62f918bccbdd3baaf1b9a4c29ade&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I16<br></div>`)[0];
+                popup_27393aa423f1887fd9082116b6d1d1b6.setContent(html_3cae62f918bccbdd3baaf1b9a4c29ade);
             
         
 
-        circle_marker_33bb1443215f5010788f7a6e0923f369.bindPopup(popup_52b6847619e097938a7af8c29cf5c269)
+        circle_marker_336c820074419a633a962751be05af44.bindPopup(popup_27393aa423f1887fd9082116b6d1d1b6)
         ;
 
         
     
     
-            var circle_marker_4647e504bbd54080673f55d9ebe92ff8 = L.circleMarker(
+            var circle_marker_75f8d9ac350d8c0454edeb80d81b1331 = L.circleMarker(
                 [45.21325185, 6.103967848],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_cd99c6dab0bdc50fe80d011880baf7ce = L.popup({
+        var popup_0a6099cca3530d863c4b12efd4efedae = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_2612669c337f1dca79dab9861b5c083e = $(`<div id=&quot;html_2612669c337f1dca79dab9861b5c083e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I9<br></div>`)[0];
-                popup_cd99c6dab0bdc50fe80d011880baf7ce.setContent(html_2612669c337f1dca79dab9861b5c083e);
+                var html_0efcc6a250471504733425d860c8218f = $(`<div id=&quot;html_0efcc6a250471504733425d860c8218f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I9<br></div>`)[0];
+                popup_0a6099cca3530d863c4b12efd4efedae.setContent(html_0efcc6a250471504733425d860c8218f);
             
         
 
-        circle_marker_4647e504bbd54080673f55d9ebe92ff8.bindPopup(popup_cd99c6dab0bdc50fe80d011880baf7ce)
+        circle_marker_75f8d9ac350d8c0454edeb80d81b1331.bindPopup(popup_0a6099cca3530d863c4b12efd4efedae)
         ;
 
         
     
     
-            var circle_marker_256b7a03c05e031eeb0c6ee4e3ff5f7d = L.circleMarker(
+            var circle_marker_e4f6b3e7889c0d1f228c33897ef77695 = L.circleMarker(
                 [45.21351532, 6.104899413],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_02cb2c89caf37caa8ea43e3340f1d2c5 = L.popup({
+        var popup_2669c6c012ab0aba21f70521bbf6af86 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_970b86121eccc09c57cbf1b8264d6cec = $(`<div id=&quot;html_970b86121eccc09c57cbf1b8264d6cec&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH20<br></div>`)[0];
-                popup_02cb2c89caf37caa8ea43e3340f1d2c5.setContent(html_970b86121eccc09c57cbf1b8264d6cec);
+                var html_c0b0e3e564625d73fa77bab2bdb5f80b = $(`<div id=&quot;html_c0b0e3e564625d73fa77bab2bdb5f80b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH20<br></div>`)[0];
+                popup_2669c6c012ab0aba21f70521bbf6af86.setContent(html_c0b0e3e564625d73fa77bab2bdb5f80b);
             
         
 
-        circle_marker_256b7a03c05e031eeb0c6ee4e3ff5f7d.bindPopup(popup_02cb2c89caf37caa8ea43e3340f1d2c5)
+        circle_marker_e4f6b3e7889c0d1f228c33897ef77695.bindPopup(popup_2669c6c012ab0aba21f70521bbf6af86)
         ;
 
         
     
     
-            var circle_marker_57b085dc28cad583c88c3e95f9b1f47d = L.circleMarker(
+            var circle_marker_9fda4be6bd9239a1a784c271d4530116 = L.circleMarker(
                 [45.21351509, 6.104899277],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_677826649e0bfa4196d0f7680be3004d = L.popup({
+        var popup_8d2bd43e9d28f36aea26f7ea86e53d6f = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_a62a05af03b1264f3194fc8ef5881417 = $(`<div id=&quot;html_a62a05af03b1264f3194fc8ef5881417&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH14<br></div>`)[0];
-                popup_677826649e0bfa4196d0f7680be3004d.setContent(html_a62a05af03b1264f3194fc8ef5881417);
+                var html_855dd73c8909c3de6fc56558b7bcf642 = $(`<div id=&quot;html_855dd73c8909c3de6fc56558b7bcf642&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH14<br></div>`)[0];
+                popup_8d2bd43e9d28f36aea26f7ea86e53d6f.setContent(html_855dd73c8909c3de6fc56558b7bcf642);
             
         
 
-        circle_marker_57b085dc28cad583c88c3e95f9b1f47d.bindPopup(popup_677826649e0bfa4196d0f7680be3004d)
+        circle_marker_9fda4be6bd9239a1a784c271d4530116.bindPopup(popup_8d2bd43e9d28f36aea26f7ea86e53d6f)
         ;
 
         
     
     
-            var circle_marker_7a6ae56424ab0bb3f6c9162ecec04fe4 = L.circleMarker(
+            var circle_marker_4088b848dbf3251ae5682a2c6c13b368 = L.circleMarker(
                 [45.21215691, 6.106813697],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_7739d44cd0c558bff2315ac470741aa0 = L.popup({
+        var popup_8037013600b0e85284ce10f2c6fe8a9e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_8e81fd47351f46452892ba66ca485a66 = $(`<div id=&quot;html_8e81fd47351f46452892ba66ca485a66&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I30<br></div>`)[0];
-                popup_7739d44cd0c558bff2315ac470741aa0.setContent(html_8e81fd47351f46452892ba66ca485a66);
+                var html_5da6d41c1b15318c49d9043d2456b8af = $(`<div id=&quot;html_5da6d41c1b15318c49d9043d2456b8af&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I30<br></div>`)[0];
+                popup_8037013600b0e85284ce10f2c6fe8a9e.setContent(html_5da6d41c1b15318c49d9043d2456b8af);
             
         
 
-        circle_marker_7a6ae56424ab0bb3f6c9162ecec04fe4.bindPopup(popup_7739d44cd0c558bff2315ac470741aa0)
+        circle_marker_4088b848dbf3251ae5682a2c6c13b368.bindPopup(popup_8037013600b0e85284ce10f2c6fe8a9e)
         ;
 
         
     
     
-            var circle_marker_ebf129c0a4424389c140f3a728768e87 = L.circleMarker(
+            var circle_marker_ae13350b9b5c1c4918c8e5105e61c4e3 = L.circleMarker(
                 [45.222595, 6.136635],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_682fe9d007353b2204570bd101003786 = L.popup({
+        var popup_ee20ff4038d29418cf59b6daa19491a1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_8835ec041a1ca4dd7dabfe4d8de066db = $(`<div id=&quot;html_8835ec041a1ca4dd7dabfe4d8de066db&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I21<br></div>`)[0];
-                popup_682fe9d007353b2204570bd101003786.setContent(html_8835ec041a1ca4dd7dabfe4d8de066db);
+                var html_d6b4fb168579bc0faf88a5d4b276501a = $(`<div id=&quot;html_d6b4fb168579bc0faf88a5d4b276501a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I21<br></div>`)[0];
+                popup_ee20ff4038d29418cf59b6daa19491a1.setContent(html_d6b4fb168579bc0faf88a5d4b276501a);
             
         
 
-        circle_marker_ebf129c0a4424389c140f3a728768e87.bindPopup(popup_682fe9d007353b2204570bd101003786)
+        circle_marker_ae13350b9b5c1c4918c8e5105e61c4e3.bindPopup(popup_ee20ff4038d29418cf59b6daa19491a1)
         ;
 
         
     
     
-            var circle_marker_de994036ec3c6a454e65d54e4d752ec6 = L.circleMarker(
+            var circle_marker_fbf9182310eb7b2bdf86838054edf226 = L.circleMarker(
                 [45.22126167, 6.134628333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_ff0ebf73d8e6e3f67ab0bccf6f9f5473 = L.popup({
+        var popup_151b4ea66461b1d982a78567bae44195 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_a58cc9b1635694c75b9194ae2da526a9 = $(`<div id=&quot;html_a58cc9b1635694c75b9194ae2da526a9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I6<br></div>`)[0];
-                popup_ff0ebf73d8e6e3f67ab0bccf6f9f5473.setContent(html_a58cc9b1635694c75b9194ae2da526a9);
+                var html_bef6bb5cb9f8a29781ac6c5127c6f982 = $(`<div id=&quot;html_bef6bb5cb9f8a29781ac6c5127c6f982&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I6<br></div>`)[0];
+                popup_151b4ea66461b1d982a78567bae44195.setContent(html_bef6bb5cb9f8a29781ac6c5127c6f982);
             
         
 
-        circle_marker_de994036ec3c6a454e65d54e4d752ec6.bindPopup(popup_ff0ebf73d8e6e3f67ab0bccf6f9f5473)
+        circle_marker_fbf9182310eb7b2bdf86838054edf226.bindPopup(popup_151b4ea66461b1d982a78567bae44195)
         ;
 
         
     
     
-            var circle_marker_45df17f7164bea7a8a2fccf881c2b675 = L.circleMarker(
+            var circle_marker_2fc32ca7c9e76f6fa52c6dd540f2e438 = L.circleMarker(
                 [45.22171667, 6.133871667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_8f5f761dcc2b45b5d72e8e274ea01110 = L.popup({
+        var popup_021174c630209cb9f5f2238935facb1b = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_3e4345ed335d07a1f64d634481681725 = $(`<div id=&quot;html_3e4345ed335d07a1f64d634481681725&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM04<br></div>`)[0];
-                popup_8f5f761dcc2b45b5d72e8e274ea01110.setContent(html_3e4345ed335d07a1f64d634481681725);
+                var html_0a8b31c96cf2b1beff63a24e99edb696 = $(`<div id=&quot;html_0a8b31c96cf2b1beff63a24e99edb696&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM04<br></div>`)[0];
+                popup_021174c630209cb9f5f2238935facb1b.setContent(html_0a8b31c96cf2b1beff63a24e99edb696);
             
         
 
-        circle_marker_45df17f7164bea7a8a2fccf881c2b675.bindPopup(popup_8f5f761dcc2b45b5d72e8e274ea01110)
+        circle_marker_2fc32ca7c9e76f6fa52c6dd540f2e438.bindPopup(popup_021174c630209cb9f5f2238935facb1b)
         ;
 
         
     
     
-            var circle_marker_75d34cf1d9cb1b747d9c235d8f4a45fa = L.circleMarker(
+            var circle_marker_1d9292076236516a93d8b8f091144cb1 = L.circleMarker(
                 [45.22188667, 6.132923333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_1a59d99398a48f54e45251b91e1449ae = L.popup({
+        var popup_532817a004a04ece68d7603fb7e428b9 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_2d1748d0742b274c5972a69b2955686b = $(`<div id=&quot;html_2d1748d0742b274c5972a69b2955686b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I25<br></div>`)[0];
-                popup_1a59d99398a48f54e45251b91e1449ae.setContent(html_2d1748d0742b274c5972a69b2955686b);
+                var html_9ed94d39c04b804ec45a3806adcda49b = $(`<div id=&quot;html_9ed94d39c04b804ec45a3806adcda49b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I25<br></div>`)[0];
+                popup_532817a004a04ece68d7603fb7e428b9.setContent(html_9ed94d39c04b804ec45a3806adcda49b);
             
         
 
-        circle_marker_75d34cf1d9cb1b747d9c235d8f4a45fa.bindPopup(popup_1a59d99398a48f54e45251b91e1449ae)
+        circle_marker_1d9292076236516a93d8b8f091144cb1.bindPopup(popup_532817a004a04ece68d7603fb7e428b9)
         ;
 
         
     
     
-            var circle_marker_3217631fa7495117ad39ffbf8e5c4605 = L.circleMarker(
+            var circle_marker_839ae945975d7130c93b5e5f9d148e90 = L.circleMarker(
                 [45.21977, 6.129935],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_e595b2714a03199fb0360f5a4636cc90 = L.popup({
+        var popup_222d78664d59f40a5291f865de7ce03d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_52e914fb0f1fa14e484db24821cbff6c = $(`<div id=&quot;html_52e914fb0f1fa14e484db24821cbff6c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I1<br></div>`)[0];
-                popup_e595b2714a03199fb0360f5a4636cc90.setContent(html_52e914fb0f1fa14e484db24821cbff6c);
+                var html_474a254fa2ac4fa2fb0a2dfccd58339b = $(`<div id=&quot;html_474a254fa2ac4fa2fb0a2dfccd58339b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I1<br></div>`)[0];
+                popup_222d78664d59f40a5291f865de7ce03d.setContent(html_474a254fa2ac4fa2fb0a2dfccd58339b);
             
         
 
-        circle_marker_3217631fa7495117ad39ffbf8e5c4605.bindPopup(popup_e595b2714a03199fb0360f5a4636cc90)
+        circle_marker_839ae945975d7130c93b5e5f9d148e90.bindPopup(popup_222d78664d59f40a5291f865de7ce03d)
         ;
 
         
     
     
-            var circle_marker_0ab98e246fe8a6e04a0480fced0d86ba = L.circleMarker(
+            var circle_marker_d6d2f551f4a03485af71b461f7b0dea2 = L.circleMarker(
                 [45.22043667, 6.130751667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_0d37f111529fccc5c783bf93310c3f3f = L.popup({
+        var popup_6351cf022dac52b5f1953925fd0e2414 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_77b6bc905d9ea6db5053f18ff8c061e4 = $(`<div id=&quot;html_77b6bc905d9ea6db5053f18ff8c061e4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I8<br></div>`)[0];
-                popup_0d37f111529fccc5c783bf93310c3f3f.setContent(html_77b6bc905d9ea6db5053f18ff8c061e4);
+                var html_5f9e3ce5356ef3537b9836e7adca8b9d = $(`<div id=&quot;html_5f9e3ce5356ef3537b9836e7adca8b9d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I8<br></div>`)[0];
+                popup_6351cf022dac52b5f1953925fd0e2414.setContent(html_5f9e3ce5356ef3537b9836e7adca8b9d);
             
         
 
-        circle_marker_0ab98e246fe8a6e04a0480fced0d86ba.bindPopup(popup_0d37f111529fccc5c783bf93310c3f3f)
+        circle_marker_d6d2f551f4a03485af71b461f7b0dea2.bindPopup(popup_6351cf022dac52b5f1953925fd0e2414)
         ;
 
         
     
     
-            var circle_marker_b4b21349065c21756c32d2285ea5e33c = L.circleMarker(
+            var circle_marker_0e51d033d8fa643f6aaf8c62015b5310 = L.circleMarker(
                 [45.218095, 6.124345],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_39c53e1a51ca21eace3930cc46f24b6e = L.popup({
+        var popup_b1e663d2b3eadf237944248c9f41f3cf = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d15d00b4e115da16b52d016a47bc1722 = $(`<div id=&quot;html_d15d00b4e115da16b52d016a47bc1722&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I29<br></div>`)[0];
-                popup_39c53e1a51ca21eace3930cc46f24b6e.setContent(html_d15d00b4e115da16b52d016a47bc1722);
+                var html_48d9bbe5d786bd915cdef05a23e66cb7 = $(`<div id=&quot;html_48d9bbe5d786bd915cdef05a23e66cb7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I29<br></div>`)[0];
+                popup_b1e663d2b3eadf237944248c9f41f3cf.setContent(html_48d9bbe5d786bd915cdef05a23e66cb7);
             
         
 
-        circle_marker_b4b21349065c21756c32d2285ea5e33c.bindPopup(popup_39c53e1a51ca21eace3930cc46f24b6e)
+        circle_marker_0e51d033d8fa643f6aaf8c62015b5310.bindPopup(popup_b1e663d2b3eadf237944248c9f41f3cf)
         ;
 
         
     
     
-            var circle_marker_023afe3f822c088511acd6f9ef18be72 = L.circleMarker(
+            var circle_marker_a109be591a1ea0b18647960d8aa0b6fd = L.circleMarker(
                 [45.21647, 6.112185],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_741401b483f040614c6629ddee988d91 = L.popup({
+        var popup_0e8fc63c364e7e7c47b97c901cf1dbae = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_697c4a14dee34aa9c6c4a1c949b76bbe = $(`<div id=&quot;html_697c4a14dee34aa9c6c4a1c949b76bbe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM08<br></div>`)[0];
-                popup_741401b483f040614c6629ddee988d91.setContent(html_697c4a14dee34aa9c6c4a1c949b76bbe);
+                var html_ff188e65a43c99f96b371bff1aaf6dd1 = $(`<div id=&quot;html_ff188e65a43c99f96b371bff1aaf6dd1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM08<br></div>`)[0];
+                popup_0e8fc63c364e7e7c47b97c901cf1dbae.setContent(html_ff188e65a43c99f96b371bff1aaf6dd1);
             
         
 
-        circle_marker_023afe3f822c088511acd6f9ef18be72.bindPopup(popup_741401b483f040614c6629ddee988d91)
+        circle_marker_a109be591a1ea0b18647960d8aa0b6fd.bindPopup(popup_0e8fc63c364e7e7c47b97c901cf1dbae)
         ;
 
         
     
     
-            var circle_marker_2c7a0ac8c77967b419576859cc362b12 = L.circleMarker(
+            var circle_marker_9c1c280779b841e0134590d3b69bd05b = L.circleMarker(
                 [45.21693, 6.113213333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_e280eae3d6e63696a531b05f48a88804 = L.popup({
+        var popup_134186ebde48c4211ba3e51b46279b88 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d71171933321341997e218ade05dc64a = $(`<div id=&quot;html_d71171933321341997e218ade05dc64a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: RouteCH<br></div>`)[0];
-                popup_e280eae3d6e63696a531b05f48a88804.setContent(html_d71171933321341997e218ade05dc64a);
+                var html_ad4eb4d56a1652da8c152c08f3a88127 = $(`<div id=&quot;html_ad4eb4d56a1652da8c152c08f3a88127&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: RouteCH<br></div>`)[0];
+                popup_134186ebde48c4211ba3e51b46279b88.setContent(html_ad4eb4d56a1652da8c152c08f3a88127);
             
         
 
-        circle_marker_2c7a0ac8c77967b419576859cc362b12.bindPopup(popup_e280eae3d6e63696a531b05f48a88804)
+        circle_marker_9c1c280779b841e0134590d3b69bd05b.bindPopup(popup_134186ebde48c4211ba3e51b46279b88)
         ;
 
         
     
     
-            var circle_marker_96e37966ac5bf376184f58ebd36eb002 = L.circleMarker(
+            var circle_marker_28e67441bdb18d4ac392dd923d6eecfd = L.circleMarker(
                 [45.21952167, 6.123273333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_ece76824642c72cebeb0ceedeb9683cf = L.popup({
+        var popup_44bb2daa582127695d957e3e3ede283a = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_ecdebb6b1a369638e78d096f2337a4f9 = $(`<div id=&quot;html_ecdebb6b1a369638e78d096f2337a4f9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I22<br></div>`)[0];
-                popup_ece76824642c72cebeb0ceedeb9683cf.setContent(html_ecdebb6b1a369638e78d096f2337a4f9);
+                var html_07fc1f83b0dd6b9526adf6bdc6197292 = $(`<div id=&quot;html_07fc1f83b0dd6b9526adf6bdc6197292&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I22<br></div>`)[0];
+                popup_44bb2daa582127695d957e3e3ede283a.setContent(html_07fc1f83b0dd6b9526adf6bdc6197292);
             
         
 
-        circle_marker_96e37966ac5bf376184f58ebd36eb002.bindPopup(popup_ece76824642c72cebeb0ceedeb9683cf)
+        circle_marker_28e67441bdb18d4ac392dd923d6eecfd.bindPopup(popup_44bb2daa582127695d957e3e3ede283a)
         ;
 
         
     
     
-            var circle_marker_763d168178cede32ca63096d468dee52 = L.circleMarker(
+            var circle_marker_c190ea781fe3edb0e3e54e01759530c8 = L.circleMarker(
                 [45.21833833, 6.122666667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_a0eb6fca25a5dcabdf8c8e8565532738 = L.popup({
+        var popup_8999522f9a7e75b2ee6eb0fa3d094b2d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_08943d7516a8db7b230a8feb61e55d9c = $(`<div id=&quot;html_08943d7516a8db7b230a8feb61e55d9c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I13<br></div>`)[0];
-                popup_a0eb6fca25a5dcabdf8c8e8565532738.setContent(html_08943d7516a8db7b230a8feb61e55d9c);
+                var html_9c782627c84497a29b04222cdee271fe = $(`<div id=&quot;html_9c782627c84497a29b04222cdee271fe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I13<br></div>`)[0];
+                popup_8999522f9a7e75b2ee6eb0fa3d094b2d.setContent(html_9c782627c84497a29b04222cdee271fe);
             
         
 
-        circle_marker_763d168178cede32ca63096d468dee52.bindPopup(popup_a0eb6fca25a5dcabdf8c8e8565532738)
+        circle_marker_c190ea781fe3edb0e3e54e01759530c8.bindPopup(popup_8999522f9a7e75b2ee6eb0fa3d094b2d)
         ;
 
         
     
     
-            var circle_marker_2c46a304df0efb509ccbf83eddfc3af2 = L.circleMarker(
+            var circle_marker_8a4326e22c4f9077f5cb7c8f4b9a8222 = L.circleMarker(
                 [45.21793167, 6.123648333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_62c0b3b8e0daa53010ec40695d5719a9 = L.popup({
+        var popup_f78ab2402b91fc2678a4687fbf0f7624 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_eeebff9ef18d7a1cb38939a79f09d4b9 = $(`<div id=&quot;html_eeebff9ef18d7a1cb38939a79f09d4b9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I23<br></div>`)[0];
-                popup_62c0b3b8e0daa53010ec40695d5719a9.setContent(html_eeebff9ef18d7a1cb38939a79f09d4b9);
+                var html_6eb01cbe73167895a42b74b2ad2bf3be = $(`<div id=&quot;html_6eb01cbe73167895a42b74b2ad2bf3be&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I23<br></div>`)[0];
+                popup_f78ab2402b91fc2678a4687fbf0f7624.setContent(html_6eb01cbe73167895a42b74b2ad2bf3be);
             
         
 
-        circle_marker_2c46a304df0efb509ccbf83eddfc3af2.bindPopup(popup_62c0b3b8e0daa53010ec40695d5719a9)
+        circle_marker_8a4326e22c4f9077f5cb7c8f4b9a8222.bindPopup(popup_f78ab2402b91fc2678a4687fbf0f7624)
         ;
 
         
     
     
-            var circle_marker_3615aa27fe57927b485e481b82c717c5 = L.circleMarker(
+            var circle_marker_c7dcd7a88b517e7307db5483da740751 = L.circleMarker(
                 [45.217705, 6.123641667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
         
     
-        var popup_08680a310bb6672524331e4c706d15bd = L.popup({
+        var popup_9b652ca5d624a711604f7431190cfd65 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_b8a675f435b363c1da1a5fe7fe484ae2 = $(`<div id=&quot;html_b8a675f435b363c1da1a5fe7fe484ae2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I15<br></div>`)[0];
-                popup_08680a310bb6672524331e4c706d15bd.setContent(html_b8a675f435b363c1da1a5fe7fe484ae2);
+                var html_afb3f3acc7eb52fd55f57fac9ec7b857 = $(`<div id=&quot;html_afb3f3acc7eb52fd55f57fac9ec7b857&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I15<br></div>`)[0];
+                popup_9b652ca5d624a711604f7431190cfd65.setContent(html_afb3f3acc7eb52fd55f57fac9ec7b857);
             
         
 
-        circle_marker_3615aa27fe57927b485e481b82c717c5.bindPopup(popup_08680a310bb6672524331e4c706d15bd)
+        circle_marker_c7dcd7a88b517e7307db5483da740751.bindPopup(popup_9b652ca5d624a711604f7431190cfd65)
         ;
 
         
     
     
-            var layer_control_2b7c3e20ea180adab1148ba886dd4b63_layers = {
+            var layer_control_33e56bb83265b07fbbec1d87351dfcb1_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_5efa40c7feb01f4298a9fcd736e8d53b,
-                    &quot;Satellite&quot; : tile_layer_d2cde08a6bcd4c35c146137f834ee9bc,
+                    &quot;openstreetmap&quot; : tile_layer_ac9160686b5b7075df92bf4c6c2751af,
+                    &quot;Satellite&quot; : tile_layer_e7359dc7ff8419c9c098ea834f6880f7,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_2b7c3e20ea180adab1148ba886dd4b63 = L.control.layers(
-                layer_control_2b7c3e20ea180adab1148ba886dd4b63_layers.base_layers,
-                layer_control_2b7c3e20ea180adab1148ba886dd4b63_layers.overlays,
+            let layer_control_33e56bb83265b07fbbec1d87351dfcb1 = L.control.layers(
+                layer_control_33e56bb83265b07fbbec1d87351dfcb1_layers.base_layers,
+                layer_control_33e56bb83265b07fbbec1d87351dfcb1_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_051f6e8b894a5267bc794ecff1581c87);
+            ).addTo(map_0fa8d7d4df4fc74270d71318f4fffb13);
 
         
 </script>
 </html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
-<p>Carte des enregistreurs acoustiques posés en 2025</p>
 </div>
 </div>
-<p>Les enregistreurs ont été posés mi-juin 2025 avant l’arrivée du troupeau de brebis de l’âne. Deux maintenances ont été effectuées durant l’été et la récupération s’est faite début-octobre. Sur la figure 2, le début et la fin d’enregistrement de chaque audiomoth.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Cette carte montre la localisation des enregistreurs acoustiques déployés en 2025. Cliquer sur un point por avoir le nom de l’enregistreur associé.</p>
+</div></div><p>Les enregistreurs ont été posés mi-juin 2025 avant l’arrivée du troupeau de brebis de l’âne. Deux maintenances ont été effectuées durant l’été et la récupération s’est faite début-octobre. Sur la figure 2, le début et la fin d’enregistrement de chaque audiomoth.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -1068,135 +1068,44 @@ timeline
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Périodes de fonctionnement des enregistreurs AudioMoth
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div id="c4db62ad-fe91-4560-bd1c-eaa63a1d348c" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <iframe scrolling="no" width="100%" height="660" src="iframe_figures/figure_2.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-<p>Figure 2 : Début et fin d’enregistrement de chaque Logger</p>
-<p>La figure 3 nous montre les précipitations et la température relevés par la station météo de l’âne. Une courbe fine toutes les 10 minutes est disponible ainsi qu’une autre qui est une variation journalière.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="météo" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="météo">Météo</h2>
+<p>La figure 3 nous montre les précipitations et la température relevés par la station météo de l’âne. Une courbe fine toutes les 10 minutes est disponible ainsi qu’une variation journalière.</p>
 <div id="5e8c9c1a-1c61-4ab8-9411-c7770ec13fc0" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <iframe scrolling="no" width="100%" height="520" src="iframe_figures/figure_3.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-<p>Figure 3: Précipitation et température relevé par la station metéo de Belledonne</p>
-</section>
-<section id="spectrogramme-long-terme" class="level2">
-<h2 class="anchored" data-anchor-id="spectrogramme-long-terme">Spectrogramme long terme</h2>
-<p>La figure 4 permet de voir les spectrogrammes long terme de chaque enregistreurs. un menu déroulant permet de choisir l’enregistreur désiré. Une photo de la map avec le nom de tous les enregistreurs est en fin de page <span class="citation" data-cites="photo-map">@photo-map</span>.</p>
-<h2 class="anchored">
-Choisir un logger :
-</h2>
-<p><select id="loggerDropdown" onchange="changeLogger()"> <option>Chargement…</option> </select></p>
-<p><br><br></p>
-<iframe id="ltsaFrame" width="100%" height="400" frameborder="0">
-</iframe>
-<script>
-// --------------------------------------------------------------
-// Liste des loggers intégrée directement (HTML autonome)
-// --------------------------------------------------------------
-const files = [
-  "AM02.html", "AM04.html", "AM08.html", "AM09.html", "CH10.html",
-  "CH12.html", "CH14.html", "CH17.html", "CH20.html", "I1.html",
-  "I10.html", "I12.html", "I13.html", "I14.html", "I15.html",
-  "I16.html", "I19.html", "I20.html", "I21.html", "I22.html",
-  "I23.html", "I25.html", "I26.html", "I27.html", "I29.html",
-  "I30.html", "I4.html", "I6.html", "I7.html", "I8.html", "I9.html",
-  "RouteCH.html"
-];
 
-// --------------------------------------------------------------
-// Remplir le dropdown
-// --------------------------------------------------------------
-const dropdown = document.getElementById("loggerDropdown");
-dropdown.innerHTML = ""; // vider l'option par défaut
-
-files.forEach(file => {
-    const opt = document.createElement("option");
-    opt.value = file;  // le nom du fichier HTML
-    opt.textContent = file.replace(".html", ""); // affichage propre
-    dropdown.appendChild(opt);
-});
-
-// Sélectionner automatiquement le premier
-if (files.length > 0) {
-    dropdown.value = files[0];
-    changeLogger();
-}
-
-// --------------------------------------------------------------
-// Mettre à jour l'iframe quand un logger est choisi
-// --------------------------------------------------------------
-function changeLogger() {
-    const file = document.getElementById("loggerDropdown").value;
-    document.getElementById("ltsaFrame").src =
-        "LTSAforhtml/iframe_figures/" + file;
-}
-</script>
-<p>Figure 4 : Spectrogramme long terme de chaque logger</p>
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Précipitation et température relevé par la station metéo de Belledonne</p>
+</div></div></section>
 </section>
-<section id="leq" class="level2">
-<h2 class="anchored" data-anchor-id="leq">Leq</h2>
-<p>La figure figure 5 montre l’évolution du Leq (entre 8 et 42 kHz) - un menu déroulant permet de choisir parmis 3 périodes. La figure est mise en relation avec la météo. un zoom sur le Leq permet également le meme zoom sur la météo. Le choix des courbes visibles est dynamique; il suffit de cliquer deux fois sur un enregistreur pour n’afficher que sa courbe et passer tous les autres en invisible. On peut additionner ensuite autant de courbe qu’on le veut en cliquant sur les courbes que l’on souhaite ajouter.</p>
-<div id="9d4b1965-5478-437c-9a83-790a3335ee55" class="cell" data-execution_count="5">
-<div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="820" src="iframe_figures/figure_5.html" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-<p>Figure 5 : LEq disponible pour 3 périodes avec choix dynamique de ou des enregistreurs souhaités – Fenêtres temporelles &amp; météo synchronisées</p>
-<p>Une autre visualisation en heatmap est disponible sur la figure 6. Avec coloration en mauve pour insecte et en vert pour la pluie (pour le moment les données proviennent de la station météo)</p>
-<div id="be042ece-a426-4be6-be3c-7aac5a2f79e9" class="cell" data-execution_count="6">
-<div class="cell-output cell-output-display">
-<iframe scrolling="no" width="720px" height="370" src="iframe_figures/figure_6.html" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-<div id="79dfcd0a-1276-4a5b-8a72-72f19cec73e9" class="cell" data-execution_count="7">
-<div class="cell-output cell-output-display">
-<iframe scrolling="no" width="720px" height="370" src="iframe_figures/figure_7.html" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-<p>Figure 6 : Heatmap avec bruit insecte en mauve et bruit de la pluie en vert</p>
-<div id="cell-photo-map" class="cell" data-execution_count="8">
-<div class="cell-output cell-output-display">
-<div id="photo-map" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="index_files/figure-html/photo-map-output-1.png" width="763" height="456" class="figure-img"></p>
-<figcaption>Photo de la map avec les noms des enregistreurs</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins" class="level2">
-<h2 class="anchored" data-anchor-id="répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins">Répartition de l’utilisation de l’espace des brebis et des bouquetins</h2>
-<section id="répartition-de-lutilisation-de-lespace-des-brebis-en-cumulé-sur-les-années-2018-à-2025" class="level3">
-<h3 class="anchored" data-anchor-id="répartition-de-lutilisation-de-lespace-des-brebis-en-cumulé-sur-les-années-2018-à-2025">Répartition de l’utilisation de l’espace des brebis en cumulé sur les années 2018 à 2025</h3>
-<table style="width: 100%; border: none;">
-<tbody><tr>
-<td style="width: 50%; padding-right: 10px;">
-<img src="assets/imageUD/allyear_dombou/chargement_EsriTopo_2018-2025_combined_avecsiteaudiomoth.png" style="width: 100%; border-radius: 8px;">
-</td>
-<td style="width: 50%; padding-left: 10px;">
-<img src="assets/imageUD/allyear_dombou/BBUD_iso_2018-2025_combined_avecsiteaudiomoth.png" style="width: 100%; border-radius: 8px;">
-</td>
-</tr>
-</tbody></table>
-</section>
-<section id="répartition-de-lutilisation-de-lespace-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre" class="level3">
-<h3 class="anchored" data-anchor-id="répartition-de-lutilisation-de-lespace-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre">Répartition de l’utilisation de l’espace des bouquetins en cumulé sur les années 2017 à 2025 (uniquement sur les mois de juin à octobre)</h3>
-<table style="width: 100%; border: none;">
-<tbody><tr>
-<td style="width: 50%; padding-right: 10px;">
-<img src="assets/imageUD/allyear_dombou/chargement_EsriTopo_bouquetin_2017_2025_juintooctobre.png" style="width: 100%; border-radius: 8px;">
-</td>
-<td style="width: 50%; padding-left: 10px;">
-<img src="assets/imageUD/allyear_dombou/BBUD_iso_bouquetin_2017_2025_newiso_juintooctobre.png" style="width: 100%; border-radius: 8px;">
-</td>
-</tr>
-</tbody></table>
+<section id="répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins" class="level1 page-columns page-full">
+<h1>Répartition de l’utilisation de l’espace des brebis et des bouquetins</h1>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1205,7 +1114,7 @@ function changeLogger() {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <section id="bouquetins" class="level3">
 <h3 class="anchored" data-anchor-id="bouquetins">Bouquetins</h3>
@@ -1228,10 +1137,34 @@ function changeLogger() {
 </div>
 </div>
 </div>
+<section id="chargement-des-brebis-en-cumulé-sur-les-années-2018-à-2025" class="level2">
+<h2 class="anchored" data-anchor-id="chargement-des-brebis-en-cumulé-sur-les-années-2018-à-2025">Chargement des brebis en cumulé sur les années 2018 à 2025</h2>
+<table style="width: 100%; border: none;">
+<tbody><tr>
+<td style="width: 50%; padding-right: 10px;">
+<img src="assets/imageUD/allyear_dombou/chargement_EsriTopo_2018-2025_combined_avecsiteaudiomoth.png" style="width: 100%; border-radius: 8px;">
+</td>
+<td style="width: 50%; padding-left: 10px;">
+<img src="assets/imageUD/allyear_dombou/BBUD_iso_2018-2025_combined_avecsiteaudiomoth.png" style="width: 100%; border-radius: 8px;">
+</td>
+</tr>
+</tbody></table>
 </section>
-<section id="répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année" class="level3">
-<h3 class="anchored" data-anchor-id="répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année">Répartition de l’utilisation de l’espace des brebis pour chaque année</h3>
-<p>Déplacez le curseur pour visualiser le chargement annuel.</p>
+<section id="chargement-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre" class="level2">
+<h2 class="anchored" data-anchor-id="chargement-des-bouquetins-en-cumulé-sur-les-années-2017-à-2025-uniquement-sur-les-mois-de-juin-à-octobre">Chargement des bouquetins en cumulé sur les années 2017 à 2025 (uniquement sur les mois de juin à octobre)</h2>
+<table style="width: 100%; border: none;">
+<tbody><tr>
+<td style="width: 50%; padding-right: 10px;">
+<img src="assets/imageUD/allyear_dombou/chargement_EsriTopo_bouquetin_2017_2025_juintooctobre.png" style="width: 100%; border-radius: 8px;">
+</td>
+<td style="width: 50%; padding-left: 10px;">
+<img src="assets/imageUD/allyear_dombou/BBUD_iso_bouquetin_2017_2025_newiso_juintooctobre.png" style="width: 100%; border-radius: 8px;">
+</td>
+</tr>
+</tbody></table>
+</section>
+<section id="zoom-sur-la-répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="zoom-sur-la-répartition-de-lutilisation-de-lespace-des-brebis-pour-chaque-année">Zoom sur la répartition de l’utilisation de l’espace des brebis pour chaque année</h2>
 <table style="width: 100%; border: none;">
 <tbody><tr>
 <td style="width: 50%; vertical-align: top; padding-right: 10px;">
@@ -1306,8 +1239,10 @@ iso_UD :
 </td>
 </tr>
 </tbody></table>
-<p>Déplacez le curseur pour visualiser le chargement journalier.</p>
-<table style="width: 100%; border: none;">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Déplacez le curseur pour visualiser le chargement annuel.</p>
+</div></div><table style="width: 100%; border: none;">
 <tbody><tr>
 <td style="width: 50%; vertical-align: top; padding-right: 10px;">
 <h3 class="anchored">
@@ -1503,20 +1438,114 @@ iso_UD :
 </td>
 </tr>
 </tbody></table>
-<p>Presence des brebis sur site (2025)</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Déplacez le curseur pour visualiser le chargement journalier.</p>
+</div></div><p>Ci-dessous le graphique de présence des brebis sur site des enregistreurs acoustiques (2025)</p>
 <div class="figure">
 <p><img src="data/image/mouton_par_site.png" alt="The head and torso of a dinosaur skeleton;
             it has a large head with long sharp teeth" width="750" height="400"></p>
-<p>
-Graphique de la présence de brebis sur un rayon de 50m autour des enregistreurs acoustiques.
-</p>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Graphique de la présence de brebis sur un rayon de 50m autour des enregistreurs acoustiques.</p>
+</div></div></section>
+</section>
+<section id="paysages-sonores-enregistrés" class="level1 page-columns page-full">
+<h1>Paysages sonores enregistrés</h1>
+<section id="spectrogramme-long-terme" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="spectrogramme-long-terme">Spectrogramme long terme</h2>
+<p>La figure 4 permet de voir les spectrogrammes long terme de chaque enregistreurs. Un menu déroulant permet de choisir l’enregistreur désiré. Une photo de la map avec le nom de tous les enregistreurs est en fin de page.</p>
+<h4 class="anchored">
+Choisir un logger :
+</h4>
+<p><select id="loggerDropdown" onchange="changeLogger()"> <option>Chargement…</option> </select></p>
+<p><br><br></p>
+<iframe id="ltsaFrame" width="100%" height="400" frameborder="0">
+</iframe>
+<script>
+// --------------------------------------------------------------
+// Liste des loggers intégrée directement (HTML autonome)
+// --------------------------------------------------------------
+const files = [
+  "AM02.html", "AM04.html", "AM08.html", "AM09.html", "CH10.html",
+  "CH12.html", "CH14.html", "CH17.html", "CH20.html", "I1.html",
+  "I10.html", "I12.html", "I13.html", "I14.html", "I15.html",
+  "I16.html", "I19.html", "I20.html", "I21.html", "I22.html",
+  "I23.html", "I25.html", "I26.html", "I27.html", "I29.html",
+  "I30.html", "I4.html", "I6.html", "I7.html", "I8.html", "I9.html",
+  "RouteCH.html"
+];
+
+// --------------------------------------------------------------
+// Remplir le dropdown
+// --------------------------------------------------------------
+const dropdown = document.getElementById("loggerDropdown");
+dropdown.innerHTML = ""; // vider l'option par défaut
+
+files.forEach(file => {
+    const opt = document.createElement("option");
+    opt.value = file;  // le nom du fichier HTML
+    opt.textContent = file.replace(".html", ""); // affichage propre
+    dropdown.appendChild(opt);
+});
+
+// Sélectionner automatiquement le premier
+if (files.length > 0) {
+    dropdown.value = files[0];
+    changeLogger();
+}
+
+// --------------------------------------------------------------
+// Mettre à jour l'iframe quand un logger est choisi
+// --------------------------------------------------------------
+function changeLogger() {
+    const file = document.getElementById("loggerDropdown").value;
+    document.getElementById("ltsaFrame").src =
+        "LTSAforhtml/iframe_figures/" + file;
+}
+</script>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Spectrogramme long terme de chaque logger</p>
+</div></div></section>
+<section id="leq" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="leq">Leq</h2>
+<p>La figure 5 montre l’évolution du Leq (entre 6 et 44 kHz) associée à celle de la météo</p>
+<div id="9d4b1965-5478-437c-9a83-790a3335ee55" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<iframe scrolling="no" width="100%" height="420" src="iframe_figures/figure_5.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Evolution du LEq - disponible pour 3 périodes avec choix du ou des enregistreurs souhaités – Fenêtres temporelles &amp; météo synchronisées. Le choix des courbes visibles est dynamique; il suffit de cliquer deux fois sur un enregistreur pour n’afficher que sa courbe et passer tous les autres en invisible. On peut additionner ensuite autant de courbe qu’on le veut en cliquant sur les courbes que l’on souhaite ajouter.</p>
+</div></div><p>Une autre visualisation en heatmap est disponible sur la figure 6. Avec coloration en mauve pour insecte et en vert pour la pluie (pour le moment les données proviennent de la station météo)</p>
+<div id="be042ece-a426-4be6-be3c-7aac5a2f79e9" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<iframe scrolling="no" width="720px" height="370" src="iframe_figures/figure_6.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+<div id="79dfcd0a-1276-4a5b-8a72-72f19cec73e9" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<iframe scrolling="no" width="720px" height="370" src="iframe_figures/figure_7.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+<div id="cell-photo-map" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="photo-map" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/photo-map-output-1.png" width="763" height="456" class="figure-img"></p>
+<figcaption>Photo de la map avec les noms des enregistreurs</figcaption>
+</figure>
+</div>
+</div>
 </div>
 </section>
 </section>
-<section id="ntempi" class="level2">
-<h2 class="anchored" data-anchor-id="ntempi">NTempi</h2>
-<section id="evaluation-de-ntempi-avec-des-soundscapes-de-synthèse" class="level3">
-<h3 class="anchored" data-anchor-id="evaluation-de-ntempi-avec-des-soundscapes-de-synthèse">Evaluation de Ntempi avec des soundscapes de synthèse</h3>
+<section id="les-insectes-présents-dans-la-rncfs" class="level1 page-columns page-full">
+<h1>Les insectes présents dans la RNCFS</h1>
+<p>Une liste de 20 espèces d’orthoptères ont été recensées lors du relevé réalisé sur la RNCFS de Belledonne en 2024.</p>
 <style>
 .audio-compact {
   width: 120px;
@@ -1689,20 +1718,63 @@ Graphique de la présence de brebis sur un rayon de 50m autour des enregistreurs
   <div class="table-cell"><audio controls="" class="audio-compact"><source src="audio/Podisma pedestris_1.wav" type="audio/wav"></audio></div>
   <div class="table-cell"><img src="audio/Podisma pedestris_1_oscillo.png"></div>
 </div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Liste des 20 espèces présentent sur notre site d’étude associé à leur chant et leur oscillogramme.</p>
+</div></div></section>
+<section id="ntempi" class="level1 page-columns page-full">
+<h1>NTempi</h1>
+<section id="création-de-soundscapes-de-synthèse" class="level2">
+<h2 class="anchored" data-anchor-id="création-de-soundscapes-de-synthèse">Création de soundscapes de synthèse</h2>
+<p>Pour analyser les performances de l’indice Ntempi, nous avons créé des soundscapes de synthèses avec des nombres connues d’individus à partir de la liste des espèces présentes ci-dessus. L’objectif est de simuler des conditions d’écoute réalistes où plusieurs individus chantent simultanément à des distances variables. Pour cela, il était nécessaire de disposer d’une base de données d’enregistrements d’insectes. Nous avons téléchargé, via la plateforme ECOSoundSet, une base de données regroupant l’ensemble des espèces d’insectes recensées lors du relevé orthoptères réalisé sur la RNCFS de Belledonne en 2024.</p>
+<ul>
+<li>Synthèse d’un soundscape avec 5 individus.
+<figure class="figure">
+<img src="data/synthese/son_N5.png" alt="Synthèse de l’activité acoustique N5" width="650" height="200" class="figure-img"></figure></li>
+</ul>
+<figure class="figure">
+<figure class="figure">
+<audio controls="" class="audio-compact">
+<source src="data/synthese/SC_054_N5_SNR30.wav" type="audio/wav">
+Votre navigateur ne supporte pas la lecture audio. </audio>
+</figure>
+<ul>
+<li>Synthèse d’un soundscape avec 10 individus.
+<figure class="figure">
+<img src="data/synthese/son_N10.png" alt="Synthèse de l’activité acoustique N5" width="650" height="200" class="figure-img"></figure></li>
+</ul>
+<figure class="figure">
+<figure class="figure">
+<audio controls="" class="audio-compact">
+<source src="data/synthese/SC_060_N10_SNR30.wav" type="audio/wav">
+Votre navigateur ne supporte pas la lecture audio. </audio>
+</figure>
+<ul>
+<li>Synthèse d’un soundscape avec 15 individus.
+<figure class="figure">
+<img src="data/synthese/son_N15.png" alt="Synthèse de l’activité acoustique N5" width="650" height="200" class="figure-img"></figure></li>
+</ul>
+<figure class="figure">
+<figure class="figure">
+<audio controls="" class="audio-compact">
+<source src="data/synthese/SC_068_N15_SNR30.wav" type="audio/wav">
+Votre navigateur ne supporte pas la lecture audio. </audio>
+</figure>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Détails méthodo évaluation de NTempi
+<span class="screen-reader-only">Note</span>Détails methodo pour la création de soundscapes de synthèse
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<section id="téléchargement-de-la-base-de-données-daudio-insectes" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="téléchargement-de-la-base-de-données-daudio-insectes">Téléchargement de la base de données d’audio insectes</h3>
-<p>Dans le cadre de la création de soundscapes de synthèse permettant un contrôle précis du nombre d’insectes présents, il était nécessaire de disposer d’une base de données d’enregistrements d’insectes. Pour ce faire, nous avons téléchargé, via la plateforme ECOSoundSet, une base de données regroupant l’ensemble des espèces d’insectes recensées lors du relevé orthoptères réalisé sur la RNCFS de Belledonne en 2024.</p>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="téléchargement-de-la-base-de-données-daudio-insectes" class="level4">
+<h4 class="anchored" data-anchor-id="téléchargement-de-la-base-de-données-daudio-insectes">Téléchargement de la base de données d’audio insectes</h4>
+<p>Pour telecharger une base de données d’enregistrement d’orthoptères, nous avosn utilisé la plateforme ECOSoundSet qui regroupe plusieurs bases de données. Nous nous sommes donc restreint à la liste des 20 insectes relevés dans la RNCFS.</p>
 <p>Un premier tri a ensuite été appliqué aux enregistrements : les fichiers présentant une fréquence d’échantillonnage inférieure à 96 kHz ainsi que ceux d’une durée inférieure à 30 secondes ont été exclus. Les enregistrements restants ont ensuite été analysés une première fois à l’aide de NTempi, afin de ne conserver que ceux présentant une valeur de NTempi égale à 1.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1821,108 +1893,81 @@ Graphique de la présence de brebis sur un rayon de 50m autour des enregistreurs
 </tbody>
 </table>
 </section>
-</div>
-</div>
-<section id="synthèse-de-soundscapes-et-test-des-paramètres-de-ntempi" class="level4">
-<h4 class="anchored" data-anchor-id="synthèse-de-soundscapes-et-test-des-paramètres-de-ntempi">Synthèse de soundscapes et test des paramètres de NTempi</h4>
-<ul>
-<li>Création de 500 soundscapes avec entre 1 et 15 insectes. Les paramètres du script NTempi sont modifiés, les régressions pour chacun des sets de paramètres sont tracés sur le même graphique. Le détail du premier est en dessous et les autres sont dans la partie caché à developper “Analyse complémentaire sur l’effet des paramètres de Ntempi”</li>
-</ul>
-<div class="figure">
-<p>&lt;img src=“data/image/figure_NTempi_params”“” width=“650” height=“500” /&gt;</p>
-<p>
-Efficacité de Ntempi selon les paramètres.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/Figure_params0.png" width="650" height="500"></p>
-<p>
-Q0=0.8, T1 = 0.35.
-</p>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Analyse complémentaire sur l’effet des paramètres de Ntempi
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="figure">
-<p><img src="data/image/Figure_params1.png" width="650" height="500"></p>
-<p>
-Q0=0.7, T1 = 0.35.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/Figure_params2.png" width="650" height="500"></p>
-<p>
-Q0=0.6, T1 = 0.3.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/Figure_params3.png" width="650" height="500"></p>
-<p>
-Q0=0.5, T1 = 0.25.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/Figure_params4.png" width="650" height="500"></p>
-<p>
-Q0=0.3, T1 = 0.15.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/Figure_params5.png" width="650" height="500"></p>
-<p>
-Q0=0.2, T1 = 0.1.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/Figure_params6.png" width="650" height="500"></p>
-<p>
-Q0=0.1, T1 = 0.05.
-</p>
-</div>
-</div>
-</div>
-</div>
+<section id="prétraitement-des-fichiers-audio-individuels" class="level4">
+<h4 class="anchored" data-anchor-id="prétraitement-des-fichiers-audio-individuels">Prétraitement des fichiers audio individuels</h4>
+<p>Chaque enregistrement d’insecte subit d’abord une série de transformations standardisées. Les fichiers stéréo sont convertis en mono par moyennage des canaux. Un filtre passe-haut à 6 kHz est appliqué. Et ous les enregistrements sont tronqués ou complétés par des zéros pour atteindre une durée fixe de 30 secondes. Une normalisation par pic est effectuée pour que chaque signal atteigne la même amplitude maximale.</p>
 </section>
-<section id="effet-du-snr" class="level4">
-<h4 class="anchored" data-anchor-id="effet-du-snr">Effet du SNR</h4>
-<ul>
-<li>5 combinaisons de 3 insectes sont utilisés : pour chaqune d’entres elles, 10 soundscapes sont crées avec un SNR variables.</li>
-</ul>
-<div class="figure">
-<p><img src="data/image/Figure_SNR.png" width="800" height="250"></p>
-<p>
-Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espèces.
-</p>
-</div>
+<section id="sélection-et-mélange-des-signaux" class="level4">
+<h4 class="anchored" data-anchor-id="sélection-et-mélange-des-signaux">Sélection et mélange des signaux</h4>
+<p>Pour chaque soundscape, le nombre total d’insectes est tiré aléatoirement entre 1 et 30 individus. Les espèces présentes sont sélectionnées au hasard parmi celles disponibles, et le nombre d’individus est réparti équitablement entre elles. Les fichiers audio sont ensuite tirés aléatoirement dans le pool de chaque espèce, avec possibilité de répétition si nécessaire. Lors du mélange, chaque signal reçoit un gain aléatoire compris entre 0,7 et 1,0 pour simuler des distances variables entre les insectes et le microphone. Le signal composite est ensuite normalisé pour maintenir une intensité globale constante, avec une protection anti-saturation pour éviter l’écrêtage.</p>
 </section>
-<section id="effet-du-décalage-temporelle" class="level4">
-<h4 class="anchored" data-anchor-id="effet-du-décalage-temporelle">Effet du décalage temporelle</h4>
-<ul>
-<li>une combinaison de 4 insectes est choisies, nous allons tester le décalage des fichiers. le soundscape créé par ces 4 insectes donne volontairement NTempi=2. Nous appliquerons une decalage sequentiel de chaque fichier : 50 soundscapes avec décalages progressifs : Décalage entre fichiers : 10 ms (0.01s). Nous avons choisis le décalage pour etre le plus petit possible du tempo géré par NTempi.</li>
-</ul>
-<p>Le resultat est similaire pour les 50 soundscapes. Ntempi=2.</p>
+<section id="ajout-de-bruit-et-sauvegarde" class="level4">
+<h4 class="anchored" data-anchor-id="ajout-de-bruit-et-sauvegarde">Ajout de bruit et sauvegarde</h4>
+<p>Un bruit blanc est ajouté au soundscape selon le choix de SNR visé.</p>
+</section>
+</div>
+</div>
+</div>
+</figure></figure></figure></section>
+<section id="evaluation-de-ntempi-avec-des-soundscapes-de-synthèse" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="evaluation-de-ntempi-avec-des-soundscapes-de-synthèse">Evaluation de Ntempi avec des soundscapes de synthèse</h2>
+<section id="test-paramètriques-de-ntempi" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="test-paramètriques-de-ntempi">Test paramètriques de NTempi</h4>
+<p>Création de 800 soundscapes avec entre 1 et 30 insectes. Les paramètres de NTempi ont été optimisés et finalement bloqués sur les paramètres ci-dessous.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Formules des métriques
+<span class="screen-reader-only">Note</span>Choix des paramètres de Ntempi
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><span class="math display">\[
+<ol type="1">
+<li>Séparation spectrale (identification des bandes fréquentielles)</li>
+</ol>
+<ul>
+<li>bsize = 5000 Hz : Largeur des bandes fréquentielles.</li>
+<li>t = 5×10⁻¹¹ : Seuil de détection des pics spectraux.</li>
+</ul>
+<ol start="2" type="1">
+<li>Novelty curve (détection des événements temporels)</li>
+</ol>
+<ul>
+<li>Q = 0.6 : Quantile de discrétisation. ↓ = garde plus d’événements (sensible au bruit), ↑ = plus sélectif</li>
+<li>gamma = 10 : Compression logarithmique du spectrogramme</li>
+</ul>
+<ol start="3" type="1">
+<li>Calcul du temprum (extraction des périodicités)</li>
+</ol>
+<ul>
+<li>Na = Fs0/H0*k : Taille de fenêtre FFT. Détermine la résolution temporelle : résolution = (Fs/H/Na)×60</li>
+<li>BPMTheta = (100, 6100) BPM : Plage de tempos biologiquement plausibles</li>
+</ul>
+<ol start="4" type="1">
+<li>Détection de tempos (identification des pics et filtrage)</li>
+</ol>
+<ul>
+<li>thresh = 0.28 : Seuil d’amplitude absolu dans le temprum. ↓ = détecte plus de tempos</li>
+<li>prom_c = 0.33 : Proéminence relative (fraction du pic max). ↓ = détecte pics faibles, ↑ = seulement pics dominants</li>
+<li>eps = 60 BPM : Marge pour la détection d’harmoniques (ex: 100 et 200±eps BPM). ↓ = strict</li>
+<li>delta = 60 BPM : Marge pour fusionner tempos similaires entre bandes. ↓ = sépare variations fines, ↑ = fusionne variations d’un même individu</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="figure">
+<p><img src="data/image/Ntempi_30insects.png" width="650" height="500"></p>
+<p>
+Analyse de NTempi sur les soundscapes de synthèse
+</p>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Formules des métriques : <span class="math display">\[
 \mathrm{MAE} =
 \frac{1}{N}
 \sum_{i=1}^{N}
@@ -1942,17 +1987,81 @@ Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espè
 \sum_{i=1}^{N}
 \left( N_{\text{réel}, i} - N_{\text{Tempi}, i} \right)
 \]</span></p>
+</div></div><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Analyse complémentaire de Ntempi
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="analyse-de-ntempi-pour-des-soundscapes-créés-uniquement-à-partir-denregistrement-dune-unique-espèce." class="level4">
+<h4 class="anchored" data-anchor-id="analyse-de-ntempi-pour-des-soundscapes-créés-uniquement-à-partir-denregistrement-dune-unique-espèce.">Analyse de Ntempi pour des soundscapes créés uniquement à partir d’enregistrement d’une unique espèce.</h4>
+<div class="figure">
+<p><img src="data/image/Ntempi_decticus_solo.png" width="650" height="500"></p>
+<p>
+Analyse de Ntempi pour des soundscapes créés uniquement à partir d’enregistrement de Decticus verrucivorus
+</p>
+</div>
+<div class="figure">
+<p><img src="data/image/Ntempi_albo_solo.png" width="650" height="500"></p>
+<p>
+Analyse de Ntempi pour des soundscapes créés uniquement à partir d’enregistrement de Platycleis albopunctata
+</p>
+</div>
+<p>l’analyse faite sur Platycleis albopunctata ressemble fortement à celle sur des soundscapes créés avec des espèces différentes, la variabilité des tempos parait assez grande intra-espèce (exemple de tempos relevés pour un soundscape de 10 insectes avec étude préalables sur individu séparé : 180,180,1082,1143,1263,180,721,601,180,721 L’étude sur Decticus verrucivorus semble différente, il arrive à moins bien séparé les insectes et nous arrivons à un plateau de maximum 3 insectes, et effectivement la variabilité des Tempos est plus faible : 541,360,300,541,601,601,541,601,541</p>
+</section>
+<section id="effet-du-snr" class="level4">
+<h4 class="anchored" data-anchor-id="effet-du-snr">Effet du SNR</h4>
+<p>5 combinaisons de 3 insectes sont utilisés : pour chaqune d’entres elles, 10 soundscapes sont crées avec un SNR variables. On observe une stabilité forte du Ntempi malgré un SNR plus mauvais</p>
+<div class="figure">
+<p><img src="data/image/Figure_SNR.png" width="800" height="250"></p>
+<p>
+Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espèces.
+</p>
+</div>
+</section>
+<section id="effet-du-décalage-temporelle" class="level4">
+<h4 class="anchored" data-anchor-id="effet-du-décalage-temporelle">Effet du décalage temporelle</h4>
+<p>Une combinaison de 4 insectes est choisies, nous allons tester le décalage des fichiers. le soundscape créé par ces 4 insectes donne volontairement NTempi=2. Nous appliquerons une decalage sequentiel de chaque fichier : 50 soundscapes avec décalages progressifs : Décalage entre fichiers : 10 ms (0.01s). Nous avons choisis le décalage pour etre le plus petit possible du tempo géré par NTempi.</p>
+<p>Le resultat est similaire pour les 50 soundscapes. Ntempi=2.</p>
+</section>
 </div>
 </div>
 </div>
-<div id="440caaa5-ad97-410c-a52c-fb814f794e8b" class="cell" data-execution_count="9">
+</section>
+</section>
+<section id="ntempi-sur-nos-enregistrements-réels" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="ntempi-sur-nos-enregistrements-réels">Ntempi sur nos enregistrements réels</h2>
+<p>Les enregistrements sont préalablement filtrés pour atténuer le bruit de fond.</p>
+<p>Un filtre coupe-bande est appliqué avec une fréquence de coupure de 6000Hz puis un filtrage du bruit stationnaire est appliqué entre 6000 et 48000Hz. La méthode retenue est le lissage gaussien 2D (avec la fonction remove_background de scikit maad). Application d’un filtre gaussien bidimensionnel sur le spectrogramme pour estimer le bruit de fond, puis soustraction spectrale - Filtrage simultané dans les dimensions temporelle et fréquentielle. D’autres filtres ont été testé dont un particulèrement : remove_background_along_axis dont le principe est le calcul du profil de bruit médian pour chaque fréquence sur toute la durée de l’enregistrement, puis soustraction - Filtrage unidimensionnel le long de l’axe fréquentiel. Ce filtrage très efficace est trop fort et efface beaucoup de nos bruits d’insectes.</p>
+<div id="8b6e2c56-d626-4e95-90d5-cdf318f57107" class="cell" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <iframe scrolling="no" width="100%" height="870" src="iframe_figures/figure_9.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-<div id="8b6e2c56-d626-4e95-90d5-cdf318f57107" class="cell" data-execution_count="10">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ntempi non lissé
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div id="440caaa5-ad97-410c-a52c-fb814f794e8b" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="870" src="iframe_figures/figure_10.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="720px" height="770" src="iframe_figures/figure_10.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div id="52988851-cac1-4151-a5bf-3179b856d480" class="cell" data-execution_count="11">
@@ -1960,39 +2069,19 @@ Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espè
 <iframe scrolling="no" width="720px" height="820" src="iframe_figures/figure_11.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-</section>
-</section>
-<section id="params-et-denoising" class="level3">
-<h3 class="anchored" data-anchor-id="params-et-denoising">Params et denoising</h3>
-<div id="bef1b646-9c62-48df-aba8-8b59b6beb0ad" class="cell" data-execution_count="12">
+<div id="be5bc92c-b59c-49c9-9c19-f20103417393" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="720px" height="1820" src="iframe_figures/figure_12.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="470" src="iframe_figures/figure_12.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Distribution de Ntempi par rapport au Leq (avec coloration en fonction de la saturation.</p>
+</div><div class="">
 <div class="figure">
-<p><img src="data/image/cor_CH10_Ntempi_Leq_params_denoised.png" width="650" height="200"></p>
-<p>
-Corrélation Ntempi_params1 avec Leq + Ntempi_params2 avec Leq + Ntempi_params2_denoised avec Leq pour CH10.
-</p>
+<p><img src="data/image/colorbarSAT.png" width="50" height="300"></p>
 </div>
-<div class="figure">
-<p><img src="data/image/cor_CH12_Ntempi_Leq_params_denoised.png" width="650" height="200"></p>
-<p>
-Corrélation Ntempi_params1 avec Leq + Ntempi_params2 avec Leq + Ntempi_params2_denoised avec Leq pour CH12.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/cor_I4_Ntempi_Leq_params_denoised.png" width="650" height="200"></p>
-<p>
-Corrélation Ntempi_params1 avec Leq + Ntempi_params2 avec Leq + Ntempi_params2_denoised avec Leq pour I4.
-</p>
-</div>
-<div class="figure">
-<p><img src="data/image/distri.png" width="650" height="400"></p>
-<p>
-Distribution de Ntempi par rapport à SPL pour le CH12.
-</p>
-</div>
+</div></div>
 <div class="figure">
 <p><img src="data/image/actihour.png" width="650" height="200"></p>
 <p>
@@ -2005,72 +2094,6 @@ Activité.
 Régression logistique sur 4 variables.
 </p>
 </div>
-</section>
-</section>
-<section id="traitement-des-enregistrements-acoustiques" class="level1">
-<h1>Traitement des enregistrements acoustiques</h1>
-<section id="prétraitement-des-fichiers-audio" class="level2">
-<h2 class="anchored" data-anchor-id="prétraitement-des-fichiers-audio">1. Prétraitement des fichiers audio</h2>
-<p>Deux types de filtrage ont été appliqués sur les enregistrements :</p>
-<section id="filtre-coupe-bande-highpass" class="level3">
-<h3 class="anchored" data-anchor-id="filtre-coupe-bande-highpass">1.1 Filtre coupe-bande (highpass)</h3>
-<ul>
-<li><strong>Fréquence de coupure</strong> : 6000 Hz</li>
-<li><strong>Objectif</strong> : Suppression totale des fréquences &lt; 6000 Hz (bruits basse fréquence non pertinents pour l’étude des insectes)</li>
-<li><strong>Méthode</strong> : Mise à zéro des bins fréquentiels &lt; 6000 Hz dans le spectrogramme</li>
-</ul>
-</section>
-<section id="filtrage-du-bruit-de-fond-stationnaire" class="level3">
-<h3 class="anchored" data-anchor-id="filtrage-du-bruit-de-fond-stationnaire">1.2 Filtrage du bruit de fond stationnaire</h3>
-<p><strong>Bande de fréquences traitée</strong> : 6000 - 48000 Hz</p>
-<p>Deux méthodes ont été testées :</p>
-<section id="méthode-a-remove_background-lissage-gaussien-2d" class="level4">
-<h4 class="anchored" data-anchor-id="méthode-a-remove_background-lissage-gaussien-2d"><strong>Méthode A : <code>remove_background</code> (lissage gaussien 2D)</strong></h4>
-<ul>
-<li><strong>Principe</strong> : Application d’un filtre gaussien bidimensionnel sur le spectrogramme pour estimer le bruit de fond, puis soustraction spectrale</li>
-<li><strong>Paramètres</strong> : fenêtre gaussienne = 50, écart-type = 25</li>
-<li><strong>Avantages</strong> : Préserve bien les événements sonores transitoires (cris d’insectes), adapté aux bruits variables</li>
-<li><strong>Application</strong> : Filtrage simultané dans les dimensions temporelle et fréquentielle</li>
-</ul>
-</section>
-<section id="méthode-b-remove_background_along_axis-profil-médian" class="level4">
-<h4 class="anchored" data-anchor-id="méthode-b-remove_background_along_axis-profil-médian"><strong>Méthode B : <code>remove_background_along_axis</code> (profil médian)</strong></h4>
-<ul>
-<li><strong>Principe</strong> : Calcul du profil de bruit médian pour chaque fréquence sur toute la durée de l’enregistrement, puis soustraction</li>
-<li><strong>Paramètres</strong> : mode = médian, axe = 1 (fréquentiel), fenêtre de lissage = 25</li>
-<li><strong>Avantages</strong> : Efficace pour les bruits de fond constants, traitement rapide</li>
-<li><strong>Application</strong> : Filtrage unidimensionnel le long de l’axe fréquentiel</li>
-</ul>
-<hr>
-</section>
-</section>
-</section>
-<section id="impact-sur-le-calcul-du-leq" class="level2">
-<h2 class="anchored" data-anchor-id="impact-sur-le-calcul-du-leq">2. Impact sur le calcul du Leq</h2>
-<section id="problématique" class="level3">
-<h3 class="anchored" data-anchor-id="problématique">2.1 Problématique</h3>
-<p>Le filtrage par soustraction spectrale <strong>réduit l’énergie totale</strong> du signal en retirant le bruit de fond. Cela entraîne une <strong>diminution systématique des valeurs de Leq</strong> calculées sur les fichiers filtrés par rapport aux fichiers originaux.</p>
-</section>
-<section id="conséquences-pour-lanalyse" class="level3">
-<h3 class="anchored" data-anchor-id="conséquences-pour-lanalyse">2.2 Conséquences pour l’analyse</h3>
-<p><strong>❌ Comparaisons NON valides :</strong> - Leq fichiers filtrés ≠ Leq fichiers originaux (biais systématique à la baisse) - Mélanger des Leq de fichiers filtrés et non-filtrés dans une même analyse</p>
-<p><strong>⚠️ Comparaisons avec précautions :</strong> - Leq entre fichiers filtrés (tous traités avec les mêmes paramètres) - <strong>Limite</strong> : Si le niveau de bruit de fond varie entre enregistrements, le filtrage retire des quantités d’énergie différentes → biais différentiel possible</p>
-</section>
-<section id="recommandations-méthodologiques" class="level3">
-<h3 class="anchored" data-anchor-id="recommandations-méthodologiques">2.3 Recommandations méthodologiques</h3>
-<p><strong>Option retenue</strong> : - Calcul du <strong>Leq sur les fichiers originaux</strong> (non-filtrés) dans la bande 6000-44000 Hz - Utilisation du <strong>filtrage uniquement pour l’amélioration de la visualisation</strong> et la détection d’événements</p>
-<p><strong>Alternatives possibles</strong> : - Calcul d’un <strong>rapport Signal/Bruit (SNR)</strong> plutôt qu’un Leq absolu - Calcul du Leq sur les <strong>périodes où des cris sont détectés</strong> (segmentation temporelle) - Si utilisation du Leq sur fichiers filtrés : application strictement homogène du filtrage sur tous les enregistrements et interprétation des valeurs comme des <strong>indices relatifs</strong></p>
-<hr>
-</section>
-</section>
-<section id="méthodologie-finale-appliquée" class="level2">
-<h2 class="anchored" data-anchor-id="méthodologie-finale-appliquée">3. Méthodologie finale appliquée</h2>
-<ol type="1">
-<li><strong>Filtrage acoustique</strong> : Application de [Méthode A/B] pour améliorer le rapport signal/bruit</li>
-<li><strong>Calcul du Leq</strong> : Réalisé sur les <strong>fichiers originaux</strong> dans la bande 6000-44000 Hz</li>
-<li><strong>Justification</strong> : Préservation de l’intégrité énergétique du signal pour des mesures quantitatives fiables et comparables</li>
-</ol>
-<p>Cette approche permet de bénéficier de l’amélioration qualitative du filtrage pour la détection et l’analyse visuelle, tout en maintenant la rigueur des mesures acoustiques quantitatives.</p>
 </section>
 </section>
 
