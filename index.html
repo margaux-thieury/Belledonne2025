@@ -115,7 +115,10 @@ window.Quarto = {
   <li><a href="#cadre-méthodologique-et-contexte-environnemental" id="toc-cadre-méthodologique-et-contexte-environnemental" class="nav-link active" data-scroll-target="#cadre-méthodologique-et-contexte-environnemental">Cadre méthodologique et contexte environnemental</a>
   <ul class="collapse">
   <li><a href="#déploiement-des-enregistreurs" id="toc-déploiement-des-enregistreurs" class="nav-link" data-scroll-target="#déploiement-des-enregistreurs">Déploiement des enregistreurs</a></li>
-  <li><a href="#météo" id="toc-météo" class="nav-link" data-scroll-target="#météo">Météo</a></li>
+  <li><a href="#météo" id="toc-météo" class="nav-link" data-scroll-target="#météo">Météo</a>
+  <ul class="collapse">
+  <li><a href="#pluie" id="toc-pluie" class="nav-link" data-scroll-target="#pluie">Pluie</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins" id="toc-répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins" class="nav-link" data-scroll-target="#répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins">Répartition de l’utilisation de l’espace des brebis et des bouquetins</a>
   <ul class="collapse">
@@ -125,7 +128,6 @@ window.Quarto = {
   </ul></li>
   <li><a href="#paysages-sonores-enregistrés" id="toc-paysages-sonores-enregistrés" class="nav-link" data-scroll-target="#paysages-sonores-enregistrés">Paysages sonores enregistrés</a>
   <ul class="collapse">
-  <li><a href="#spectrogramme-long-terme" id="toc-spectrogramme-long-terme" class="nav-link" data-scroll-target="#spectrogramme-long-terme">Spectrogramme long terme</a></li>
   <li><a href="#leq" id="toc-leq" class="nav-link" data-scroll-target="#leq">Leq</a></li>
   </ul></li>
   <li><a href="#les-insectes-présents-dans-la-rncfs" id="toc-les-insectes-présents-dans-la-rncfs" class="nav-link" data-scroll-target="#les-insectes-présents-dans-la-rncfs">Les insectes présents dans la RNCFS</a></li>
@@ -135,6 +137,7 @@ window.Quarto = {
   <li><a href="#evaluation-de-ntempi-avec-des-soundscapes-de-synthèse" id="toc-evaluation-de-ntempi-avec-des-soundscapes-de-synthèse" class="nav-link" data-scroll-target="#evaluation-de-ntempi-avec-des-soundscapes-de-synthèse">Evaluation de Ntempi avec des soundscapes de synthèse</a></li>
   <li><a href="#ntempi-sur-nos-enregistrements-réels" id="toc-ntempi-sur-nos-enregistrements-réels" class="nav-link" data-scroll-target="#ntempi-sur-nos-enregistrements-réels">Ntempi sur nos enregistrements réels</a></li>
   </ul></li>
+  <li><a href="#composition-du-dataframe-final" id="toc-composition-du-dataframe-final" class="nav-link" data-scroll-target="#composition-du-dataframe-final">Composition du dataframe final</a></li>
   </ul>
 </nav>
 </div>
@@ -152,7 +155,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="déploiement-des-enregistreurs">Déploiement des enregistreurs</h2>
 <p>Durant l’été 2025, 32 enregistreurs de type audiomoth ont été posé dans la RNCFS de Belledonne. Leur emplacement est visible sur la carte ci-dessous.</p>
 <div id="cell-map" class="cell" data-execution_count="1">
-<div id="map" class="cell-output cell-output-display" data-execution_count="1">
+<div id="map" class="cell-output cell-output-display" data-execution_count="32">
 <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
 <html>
 <head>
@@ -172,7 +175,7 @@ window.Quarto = {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_091794ddc5a394a015ca70288a6986b2 {
+                #map_142ee568a44d2e44ea21e5542d26c956 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -217,16 +220,17 @@ window.Quarto = {
     <b>Légende</b><br>
     <i class=&quot;fa fa-circle&quot; style=&quot;color:green&quot;></i> Pelouse sèche<br>
     <i class=&quot;fa fa-circle&quot; style=&quot;color:blue&quot;></i> Lande fraîche<br>
+    <i class=&quot;fa fa-circle&quot; style=&quot;color:red&quot;></i> Rumex<br>
 </div>
     
-            <div class=&quot;folium-map&quot; id=&quot;map_091794ddc5a394a015ca70288a6986b2&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_142ee568a44d2e44ea21e5542d26c956&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_091794ddc5a394a015ca70288a6986b2 = L.map(
-                &quot;map_091794ddc5a394a015ca70288a6986b2&quot;,
+            var map_142ee568a44d2e44ea21e5542d26c956 = L.map(
+                &quot;map_142ee568a44d2e44ea21e5542d26c956&quot;,
                 {
                     center: [45.215862625, 6.1169473687187494],
                     crs: L.CRS.EPSG3857,
@@ -243,7 +247,7 @@ window.Quarto = {
 
         
     
-            var tile_layer_d01f4497f6129c1c623de0446231b95c = L.tileLayer(
+            var tile_layer_5b8df0ba01bbbdf47de6c409156a0b23 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -260,10 +264,10 @@ window.Quarto = {
             );
         
     
-            tile_layer_d01f4497f6129c1c623de0446231b95c.addTo(map_091794ddc5a394a015ca70288a6986b2);
+            tile_layer_5b8df0ba01bbbdf47de6c409156a0b23.addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-            var tile_layer_6cc789bab5946973e088fc8035e32970 = L.tileLayer(
+            var tile_layer_3b57a1c0b6ebaee3a17f6885adf2bf5f = L.tileLayer(
                 &quot;https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -280,762 +284,762 @@ window.Quarto = {
             );
         
     
-            tile_layer_6cc789bab5946973e088fc8035e32970.addTo(map_091794ddc5a394a015ca70288a6986b2);
+            tile_layer_3b57a1c0b6ebaee3a17f6885adf2bf5f.addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-            var circle_marker_d584f878e1e2dc3b87e4eba62a495a63 = L.circleMarker(
+            var circle_marker_a2b0fbd61820b5d7ea228384961f3580 = L.circleMarker(
                 [45.21207417, 6.095794383],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_8b69be75beff51288df7ee4e6d91eb66 = L.popup({
+        var popup_4a3c7ecc97d13a1c5ab7403d609ccfed = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_e2399d9dc427ceb824ebc3aaf5a807ee = $(`<div id=&quot;html_e2399d9dc427ceb824ebc3aaf5a807ee&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH17<br></div>`)[0];
-                popup_8b69be75beff51288df7ee4e6d91eb66.setContent(html_e2399d9dc427ceb824ebc3aaf5a807ee);
+                var html_a75e6eb40213472511639b6daf398139 = $(`<div id=&quot;html_a75e6eb40213472511639b6daf398139&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: eustaches_2<br>id_placette: 32<br>Enregistreur 2025:CH17</div>`)[0];
+                popup_4a3c7ecc97d13a1c5ab7403d609ccfed.setContent(html_a75e6eb40213472511639b6daf398139);
             
         
 
-        circle_marker_d584f878e1e2dc3b87e4eba62a495a63.bindPopup(popup_8b69be75beff51288df7ee4e6d91eb66)
+        circle_marker_a2b0fbd61820b5d7ea228384961f3580.bindPopup(popup_4a3c7ecc97d13a1c5ab7403d609ccfed)
         ;
 
         
     
     
-            var circle_marker_a792bcf9699726a83acd0df0349d024d = L.circleMarker(
+            var circle_marker_461613e42a8d4776b4a201f7d77fc33a = L.circleMarker(
                 [45.21444744, 6.096619178],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_6866ed7e995a819e47a8025c9fabb424 = L.popup({
+        var popup_36912588fb8ca0450c43a491f9c208f5 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_bc7b76a73b44ac190aaef583356b0896 = $(`<div id=&quot;html_bc7b76a73b44ac190aaef583356b0896&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I12<br></div>`)[0];
-                popup_6866ed7e995a819e47a8025c9fabb424.setContent(html_bc7b76a73b44ac190aaef583356b0896);
+                var html_c95d3583cc7242fc8abe66a63c592dc9 = $(`<div id=&quot;html_c95d3583cc7242fc8abe66a63c592dc9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: eustaches_1<br>id_placette: 31<br>Enregistreur 2025:I12</div>`)[0];
+                popup_36912588fb8ca0450c43a491f9c208f5.setContent(html_c95d3583cc7242fc8abe66a63c592dc9);
             
         
 
-        circle_marker_a792bcf9699726a83acd0df0349d024d.bindPopup(popup_6866ed7e995a819e47a8025c9fabb424)
+        circle_marker_461613e42a8d4776b4a201f7d77fc33a.bindPopup(popup_36912588fb8ca0450c43a491f9c208f5)
         ;
 
         
     
     
-            var circle_marker_19b59bddad62be83d3ca43084a41285f = L.circleMarker(
+            var circle_marker_948f89859c9642e03465227635d36883 = L.circleMarker(
                 [45.21272038, 6.100356001],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_975cc0e27582bf5cb615dcb219bf562f = L.popup({
+        var popup_f64e02a3f50fe03b62894b157402b787 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_5bc6b071df549624d990ce9b65cada35 = $(`<div id=&quot;html_5bc6b071df549624d990ce9b65cada35&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM09<br></div>`)[0];
-                popup_975cc0e27582bf5cb615dcb219bf562f.setContent(html_5bc6b071df549624d990ce9b65cada35);
+                var html_08d2b42cfd41c5a4c21330c885736bd8 = $(`<div id=&quot;html_08d2b42cfd41c5a4c21330c885736bd8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: plateau_eustaches_2<br>id_placette: 30<br>Enregistreur 2025:AM09</div>`)[0];
+                popup_f64e02a3f50fe03b62894b157402b787.setContent(html_08d2b42cfd41c5a4c21330c885736bd8);
             
         
 
-        circle_marker_19b59bddad62be83d3ca43084a41285f.bindPopup(popup_975cc0e27582bf5cb615dcb219bf562f)
+        circle_marker_948f89859c9642e03465227635d36883.bindPopup(popup_f64e02a3f50fe03b62894b157402b787)
         ;
 
         
     
     
-            var circle_marker_f18e4da6681f6f7c9d44080eb05449e0 = L.circleMarker(
+            var circle_marker_293af4c7500b86ad693d93dc4a132ce2 = L.circleMarker(
                 [45.21281543, 6.10040294],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_08c92d3fd3c845f35803298281a34627 = L.popup({
+        var popup_67148bd512182cf40b492387f8ee9331 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_c36cce3bb009e9c2fa0feff4f6a35159 = $(`<div id=&quot;html_c36cce3bb009e9c2fa0feff4f6a35159&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I07<br></div>`)[0];
-                popup_08c92d3fd3c845f35803298281a34627.setContent(html_c36cce3bb009e9c2fa0feff4f6a35159);
+                var html_ef5c334de3ed5cb5904b96a5e6b33374 = $(`<div id=&quot;html_ef5c334de3ed5cb5904b96a5e6b33374&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: plateau_eustaches_1<br>id_placette: 29<br>Enregistreur 2025:I7</div>`)[0];
+                popup_67148bd512182cf40b492387f8ee9331.setContent(html_ef5c334de3ed5cb5904b96a5e6b33374);
             
         
 
-        circle_marker_f18e4da6681f6f7c9d44080eb05449e0.bindPopup(popup_08c92d3fd3c845f35803298281a34627)
+        circle_marker_293af4c7500b86ad693d93dc4a132ce2.bindPopup(popup_67148bd512182cf40b492387f8ee9331)
         ;
 
         
     
     
-            var circle_marker_ac28f28337e262ae7cf07fbd4d7e9352 = L.circleMarker(
+            var circle_marker_ae2f76579f3546eb05f7455e6bd7b935 = L.circleMarker(
                 [45.21866932, 6.133361726],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_815918ec01b6168b30b3e8c4691c9d57 = L.popup({
+        var popup_e9c8c44994ce0b6af096a833a701b396 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_5edc4921df5e5941fe0ffe46d56b1a31 = $(`<div id=&quot;html_5edc4921df5e5941fe0ffe46d56b1a31&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM02<br></div>`)[0];
-                popup_815918ec01b6168b30b3e8c4691c9d57.setContent(html_5edc4921df5e5941fe0ffe46d56b1a31);
+                var html_b08321bacba793a6a023e60cae1a0e0d = $(`<div id=&quot;html_b08321bacba793a6a023e60cae1a0e0d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: courbassiere_route<br>id_placette: 5<br>Enregistreur 2025:AM02</div>`)[0];
+                popup_e9c8c44994ce0b6af096a833a701b396.setContent(html_b08321bacba793a6a023e60cae1a0e0d);
             
         
 
-        circle_marker_ac28f28337e262ae7cf07fbd4d7e9352.bindPopup(popup_815918ec01b6168b30b3e8c4691c9d57)
+        circle_marker_ae2f76579f3546eb05f7455e6bd7b935.bindPopup(popup_e9c8c44994ce0b6af096a833a701b396)
         ;
 
         
     
     
-            var circle_marker_79fc125f06a1e0c55b95b02ab1c4ca79 = L.circleMarker(
+            var circle_marker_21315f4d88a594319e821135d250e77d = L.circleMarker(
                 [45.21518255, 6.129357805],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_e0cb4d6080dc319f0c49d51b4db6d52c = L.popup({
+        var popup_326a4e338ac6d35bba88263080c63d80 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_8b4fbfc7ca49b71dd04dfdc472a2951e = $(`<div id=&quot;html_8b4fbfc7ca49b71dd04dfdc472a2951e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I10<br></div>`)[0];
-                popup_e0cb4d6080dc319f0c49d51b4db6d52c.setContent(html_8b4fbfc7ca49b71dd04dfdc472a2951e);
+                var html_53cd48b5ced1214a5ac7a7f8a73c52ee = $(`<div id=&quot;html_53cd48b5ced1214a5ac7a7f8a73c52ee&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: chemin_ane_1<br>id_placette: 8<br>Enregistreur 2025:I10</div>`)[0];
+                popup_326a4e338ac6d35bba88263080c63d80.setContent(html_53cd48b5ced1214a5ac7a7f8a73c52ee);
             
         
 
-        circle_marker_79fc125f06a1e0c55b95b02ab1c4ca79.bindPopup(popup_e0cb4d6080dc319f0c49d51b4db6d52c)
+        circle_marker_21315f4d88a594319e821135d250e77d.bindPopup(popup_326a4e338ac6d35bba88263080c63d80)
         ;
 
         
     
     
-            var circle_marker_eb1662465b2a2dcc979ec7e23651a07e = L.circleMarker(
+            var circle_marker_0983de368ae43438a0676601777f7290 = L.circleMarker(
                 [45.21466606, 6.128253535],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_b25b7b080c2782e54c4c4714ed5571a8 = L.popup({
+        var popup_04a3f6f43707907f4c7fc0376453928e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_5c7c7d59f2b46af9602931fe6b19895b = $(`<div id=&quot;html_5c7c7d59f2b46af9602931fe6b19895b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I14<br></div>`)[0];
-                popup_b25b7b080c2782e54c4c4714ed5571a8.setContent(html_5c7c7d59f2b46af9602931fe6b19895b);
+                var html_8835e1ca7b187e59d2fc9ba0de593eec = $(`<div id=&quot;html_8835e1ca7b187e59d2fc9ba0de593eec&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: chemin_ane_2<br>id_placette: 9<br>Enregistreur 2025:I14</div>`)[0];
+                popup_04a3f6f43707907f4c7fc0376453928e.setContent(html_8835e1ca7b187e59d2fc9ba0de593eec);
             
         
 
-        circle_marker_eb1662465b2a2dcc979ec7e23651a07e.bindPopup(popup_b25b7b080c2782e54c4c4714ed5571a8)
+        circle_marker_0983de368ae43438a0676601777f7290.bindPopup(popup_04a3f6f43707907f4c7fc0376453928e)
         ;
 
         
     
     
-            var circle_marker_7a6e45ad0960e41bfe3b54d1da551082 = L.circleMarker(
+            var circle_marker_62b4f54abbb00823929bdfa94edc6516 = L.circleMarker(
                 [45.212241, 6.125280306],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_a1efffab5709570ee1d276e0e991acdb = L.popup({
+        var popup_c056e0f607f5c85c862fd674244e70f0 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_eaee589c7a7031358b9d6021d800d725 = $(`<div id=&quot;html_eaee589c7a7031358b9d6021d800d725&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I27<br></div>`)[0];
-                popup_a1efffab5709570ee1d276e0e991acdb.setContent(html_eaee589c7a7031358b9d6021d800d725);
+                var html_911dcac4a0f3a6d1c5549825e86faedb = $(`<div id=&quot;html_911dcac4a0f3a6d1c5549825e86faedb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: chemin_ane_3<br>id_placette: 10<br>Enregistreur 2025:I27</div>`)[0];
+                popup_c056e0f607f5c85c862fd674244e70f0.setContent(html_911dcac4a0f3a6d1c5549825e86faedb);
             
         
 
-        circle_marker_7a6e45ad0960e41bfe3b54d1da551082.bindPopup(popup_a1efffab5709570ee1d276e0e991acdb)
+        circle_marker_62b4f54abbb00823929bdfa94edc6516.bindPopup(popup_c056e0f607f5c85c862fd674244e70f0)
         ;
 
         
     
     
-            var circle_marker_ee565f268525fcbcbc52f32110e57aca = L.circleMarker(
+            var circle_marker_051a8a74ab42e0d8373b69139eed869c = L.circleMarker(
                 [45.21151161, 6.124254037],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_59f04356043d906961d5f472f44bfdbd = L.popup({
+        var popup_cc0ce611a318e9c026f8f286e5a98558 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_84d26f3da8692672daab8275639aab9b = $(`<div id=&quot;html_84d26f3da8692672daab8275639aab9b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I20<br></div>`)[0];
-                popup_59f04356043d906961d5f472f44bfdbd.setContent(html_84d26f3da8692672daab8275639aab9b);
+                var html_2163f521053704e03e0ec54d8adb5a92 = $(`<div id=&quot;html_2163f521053704e03e0ec54d8adb5a92&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: chemin_ane_4<br>id_placette: 11<br>Enregistreur 2025:I20</div>`)[0];
+                popup_cc0ce611a318e9c026f8f286e5a98558.setContent(html_2163f521053704e03e0ec54d8adb5a92);
             
         
 
-        circle_marker_ee565f268525fcbcbc52f32110e57aca.bindPopup(popup_59f04356043d906961d5f472f44bfdbd)
+        circle_marker_051a8a74ab42e0d8373b69139eed869c.bindPopup(popup_cc0ce611a318e9c026f8f286e5a98558)
         ;
 
         
     
     
-            var circle_marker_9b0d2fb510b0d1415cd37b206af8ef12 = L.circleMarker(
+            var circle_marker_88ac524417db571d4d17a9e6b91aeb51 = L.circleMarker(
                 [45.21699119, 6.119832302],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_b6024c345cf5b5bfa9e35895acadd479 = L.popup({
+        var popup_3a0fbc4559d357c186bc203c873adbff = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_27b206e0afef26dd47147cf102291317 = $(`<div id=&quot;html_27b206e0afef26dd47147cf102291317&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I26<br></div>`)[0];
-                popup_b6024c345cf5b5bfa9e35895acadd479.setContent(html_27b206e0afef26dd47147cf102291317);
+                var html_a684216b72a2b17b294c7a65a0d6e8b8 = $(`<div id=&quot;html_a684216b72a2b17b294c7a65a0d6e8b8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: ane<br>id_placette: 17<br>Enregistreur 2025:I26</div>`)[0];
+                popup_3a0fbc4559d357c186bc203c873adbff.setContent(html_a684216b72a2b17b294c7a65a0d6e8b8);
             
         
 
-        circle_marker_9b0d2fb510b0d1415cd37b206af8ef12.bindPopup(popup_b6024c345cf5b5bfa9e35895acadd479)
+        circle_marker_88ac524417db571d4d17a9e6b91aeb51.bindPopup(popup_3a0fbc4559d357c186bc203c873adbff)
         ;
 
         
     
     
-            var circle_marker_9b60f8d8363e35676f70a1ce38f217cb = L.circleMarker(
+            var circle_marker_76f7de6ac381ddfdf751fb7e87defc2e = L.circleMarker(
                 [45.2120379, 6.105674651],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_414f41f182fefe1ca7c3d318a6b58915 = L.popup({
+        var popup_e601f7cfc71b2298f4cfe715093957f6 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_480199fc988fc84a036a621084d85020 = $(`<div id=&quot;html_480199fc988fc84a036a621084d85020&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I4<br></div>`)[0];
-                popup_414f41f182fefe1ca7c3d318a6b58915.setContent(html_480199fc988fc84a036a621084d85020);
+                var html_597505f89c0233d1d9e351dc5a011fe3 = $(`<div id=&quot;html_597505f89c0233d1d9e351dc5a011fe3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: exclos_2<br>id_placette: 22<br>Enregistreur 2025:I4</div>`)[0];
+                popup_e601f7cfc71b2298f4cfe715093957f6.setContent(html_597505f89c0233d1d9e351dc5a011fe3);
             
         
 
-        circle_marker_9b60f8d8363e35676f70a1ce38f217cb.bindPopup(popup_414f41f182fefe1ca7c3d318a6b58915)
+        circle_marker_76f7de6ac381ddfdf751fb7e87defc2e.bindPopup(popup_e601f7cfc71b2298f4cfe715093957f6)
         ;
 
         
     
     
-            var circle_marker_34a0969c7d0786407d7f0cd4e07ad415 = L.circleMarker(
+            var circle_marker_3cad3a02f48c7286163ce4d5a7731dcf = L.circleMarker(
                 [45.21193497, 6.105692581],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_e03fd0053f06f613d76a7df5cda93a70 = L.popup({
+        var popup_cb7cd5d881d48be1a044cbde0ce1b7f1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_7f83613a5fe1715c237d62155d836077 = $(`<div id=&quot;html_7f83613a5fe1715c237d62155d836077&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH12<br></div>`)[0];
-                popup_e03fd0053f06f613d76a7df5cda93a70.setContent(html_7f83613a5fe1715c237d62155d836077);
+                var html_c4149729e0ee6cd5eed3c810eac43dc0 = $(`<div id=&quot;html_c4149729e0ee6cd5eed3c810eac43dc0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: exclos_1<br>id_placette: 21<br>Enregistreur 2025:CH12</div>`)[0];
+                popup_cb7cd5d881d48be1a044cbde0ce1b7f1.setContent(html_c4149729e0ee6cd5eed3c810eac43dc0);
             
         
 
-        circle_marker_34a0969c7d0786407d7f0cd4e07ad415.bindPopup(popup_e03fd0053f06f613d76a7df5cda93a70)
+        circle_marker_3cad3a02f48c7286163ce4d5a7731dcf.bindPopup(popup_cb7cd5d881d48be1a044cbde0ce1b7f1)
         ;
 
         
     
     
-            var circle_marker_38b59f0def21d8248ad7e1dcf2c07bda = L.circleMarker(
+            var circle_marker_96ed0ed57d88b70ad700030836f44865 = L.circleMarker(
                 [45.21210615, 6.105555589],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_65dfcc561175ee1d6cb5fa1775a0b83b = L.popup({
+        var popup_d49d38fa6434ff38225b4aed9713af13 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_15fee9d1682d753bb85557c463a25462 = $(`<div id=&quot;html_15fee9d1682d753bb85557c463a25462&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH10<br></div>`)[0];
-                popup_65dfcc561175ee1d6cb5fa1775a0b83b.setContent(html_15fee9d1682d753bb85557c463a25462);
+                var html_07f1a94353dc6f7801d57557e40b406d = $(`<div id=&quot;html_07f1a94353dc6f7801d57557e40b406d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: cloture_exclos<br>id_placette: 23<br>Enregistreur 2025:CH10</div>`)[0];
+                popup_d49d38fa6434ff38225b4aed9713af13.setContent(html_07f1a94353dc6f7801d57557e40b406d);
             
         
 
-        circle_marker_38b59f0def21d8248ad7e1dcf2c07bda.bindPopup(popup_65dfcc561175ee1d6cb5fa1775a0b83b)
+        circle_marker_96ed0ed57d88b70ad700030836f44865.bindPopup(popup_d49d38fa6434ff38225b4aed9713af13)
         ;
 
         
     
     
-            var circle_marker_c2e25e2d9cb8f114bb7374e222e5325e = L.circleMarker(
+            var circle_marker_0c22dbd7897809f0e95a7221be1a8b7b = L.circleMarker(
                 [45.21225658, 6.105664279],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_b724e24c21330423459377f5af8f4695 = L.popup({
+        var popup_3780d0e3a0e933e73e4f40e1b308e91b = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_72779ee72608c7d10174a87b281400f4 = $(`<div id=&quot;html_72779ee72608c7d10174a87b281400f4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I19<br></div>`)[0];
-                popup_b724e24c21330423459377f5af8f4695.setContent(html_72779ee72608c7d10174a87b281400f4);
+                var html_3a781e4118d67c0daa7119aa41fdb36e = $(`<div id=&quot;html_3a781e4118d67c0daa7119aa41fdb36e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: gradient_pforte<br>id_placette: 24<br>Enregistreur 2025:I19</div>`)[0];
+                popup_3780d0e3a0e933e73e4f40e1b308e91b.setContent(html_3a781e4118d67c0daa7119aa41fdb36e);
             
         
 
-        circle_marker_c2e25e2d9cb8f114bb7374e222e5325e.bindPopup(popup_b724e24c21330423459377f5af8f4695)
+        circle_marker_0c22dbd7897809f0e95a7221be1a8b7b.bindPopup(popup_3780d0e3a0e933e73e4f40e1b308e91b)
         ;
 
         
     
     
-            var circle_marker_94693da87199340ad0fea65b5cba2ddc = L.circleMarker(
+            var circle_marker_ad5bb7b8dbdc31e6e07b856d851ebd96 = L.circleMarker(
                 [45.21285173, 6.103917918],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_7c6110afb18511f24e695e2bd0d073ec = L.popup({
+        var popup_7c2ccdc292184952457f0b768a1131d9 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_482d2f203b0f65e1c6954637d7ebee0d = $(`<div id=&quot;html_482d2f203b0f65e1c6954637d7ebee0d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I16<br></div>`)[0];
-                popup_7c6110afb18511f24e695e2bd0d073ec.setContent(html_482d2f203b0f65e1c6954637d7ebee0d);
+                var html_b0d5309094d3a477329ff6bd79612be0 = $(`<div id=&quot;html_b0d5309094d3a477329ff6bd79612be0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: renaud_3<br>id_placette: 28<br>Enregistreur 2025:I16</div>`)[0];
+                popup_7c2ccdc292184952457f0b768a1131d9.setContent(html_b0d5309094d3a477329ff6bd79612be0);
             
         
 
-        circle_marker_94693da87199340ad0fea65b5cba2ddc.bindPopup(popup_7c6110afb18511f24e695e2bd0d073ec)
+        circle_marker_ad5bb7b8dbdc31e6e07b856d851ebd96.bindPopup(popup_7c2ccdc292184952457f0b768a1131d9)
         ;
 
         
     
     
-            var circle_marker_48c80b6e45c895e271bee70b51cc100c = L.circleMarker(
+            var circle_marker_f420725e144b1d89ebef83c34119c50d = L.circleMarker(
                 [45.21325185, 6.103967848],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_736d09b98787679e34bccb3a48b555dd = L.popup({
+        var popup_0b93aa2110b5c287471cc2119d7f7e56 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_bb074a933c7feca601b7012242144165 = $(`<div id=&quot;html_bb074a933c7feca601b7012242144165&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I9<br></div>`)[0];
-                popup_736d09b98787679e34bccb3a48b555dd.setContent(html_bb074a933c7feca601b7012242144165);
+                var html_32afd16d5f9e0d8d6f16259a6a7dc12d = $(`<div id=&quot;html_32afd16d5f9e0d8d6f16259a6a7dc12d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: renaud_2<br>id_placette: 27<br>Enregistreur 2025:I9</div>`)[0];
+                popup_0b93aa2110b5c287471cc2119d7f7e56.setContent(html_32afd16d5f9e0d8d6f16259a6a7dc12d);
             
         
 
-        circle_marker_48c80b6e45c895e271bee70b51cc100c.bindPopup(popup_736d09b98787679e34bccb3a48b555dd)
+        circle_marker_f420725e144b1d89ebef83c34119c50d.bindPopup(popup_0b93aa2110b5c287471cc2119d7f7e56)
         ;
 
         
     
     
-            var circle_marker_c00d4238130c5c0a93dc237ff7ff40e7 = L.circleMarker(
+            var circle_marker_587cf84b7d988cada129bb5b58585f1f = L.circleMarker(
                 [45.21351532, 6.104899413],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_e45ec6de9677f77f3e719f01f188dec9 = L.popup({
+        var popup_da0b6e21df04d1f1cb8795e96a7f1ab0 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_2e16e1cdcd3c96714862f864b61ba7d2 = $(`<div id=&quot;html_2e16e1cdcd3c96714862f864b61ba7d2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH20<br></div>`)[0];
-                popup_e45ec6de9677f77f3e719f01f188dec9.setContent(html_2e16e1cdcd3c96714862f864b61ba7d2);
+                var html_cef89a6f63b969244c18b445e60a5e11 = $(`<div id=&quot;html_cef89a6f63b969244c18b445e60a5e11&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: chaume_175<br>id_placette: 26<br>Enregistreur 2025:CH20</div>`)[0];
+                popup_da0b6e21df04d1f1cb8795e96a7f1ab0.setContent(html_cef89a6f63b969244c18b445e60a5e11);
             
         
 
-        circle_marker_c00d4238130c5c0a93dc237ff7ff40e7.bindPopup(popup_e45ec6de9677f77f3e719f01f188dec9)
+        circle_marker_587cf84b7d988cada129bb5b58585f1f.bindPopup(popup_da0b6e21df04d1f1cb8795e96a7f1ab0)
         ;
 
         
     
     
-            var circle_marker_f2345bd0e83df6f787aa7a519514e075 = L.circleMarker(
+            var circle_marker_0e37e320eabbb60917cddb8c89f2bbb5 = L.circleMarker(
                 [45.21351509, 6.104899277],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_8a466adf6c4d321dbd81df0d4457b7a6 = L.popup({
+        var popup_1dc8502f5e3c3ff739a09ed271d82a4c = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_4e982b49817e8bfac358e22dd3dda2da = $(`<div id=&quot;html_4e982b49817e8bfac358e22dd3dda2da&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: CH14<br></div>`)[0];
-                popup_8a466adf6c4d321dbd81df0d4457b7a6.setContent(html_4e982b49817e8bfac358e22dd3dda2da);
+                var html_4dc4922c0bf08ad7f599af8cfca190b4 = $(`<div id=&quot;html_4dc4922c0bf08ad7f599af8cfca190b4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: chaume_50<br>id_placette: 25<br>Enregistreur 2025:CH14</div>`)[0];
+                popup_1dc8502f5e3c3ff739a09ed271d82a4c.setContent(html_4dc4922c0bf08ad7f599af8cfca190b4);
             
         
 
-        circle_marker_f2345bd0e83df6f787aa7a519514e075.bindPopup(popup_8a466adf6c4d321dbd81df0d4457b7a6)
+        circle_marker_0e37e320eabbb60917cddb8c89f2bbb5.bindPopup(popup_1dc8502f5e3c3ff739a09ed271d82a4c)
         ;
 
         
     
     
-            var circle_marker_1f006a4e085cad679f664fbb5d262020 = L.circleMarker(
+            var circle_marker_891961d1d282526c81353dd68a9feab3 = L.circleMarker(
                 [45.21215691, 6.106813697],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_3344393cb08bdc276eabd5a02541bdb1 = L.popup({
+        var popup_6b4830062d7c7192cd023e3ff1f6a8df = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d3e3c0ff5845daf8dbaf8afaa17ef38d = $(`<div id=&quot;html_d3e3c0ff5845daf8dbaf8afaa17ef38d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I30<br></div>`)[0];
-                popup_3344393cb08bdc276eabd5a02541bdb1.setContent(html_d3e3c0ff5845daf8dbaf8afaa17ef38d);
+                var html_153cbffe5f5b1df9e68e7b75f83901d4 = $(`<div id=&quot;html_153cbffe5f5b1df9e68e7b75f83901d4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: renaud_1<br>id_placette: 20<br>Enregistreur 2025:I30</div>`)[0];
+                popup_6b4830062d7c7192cd023e3ff1f6a8df.setContent(html_153cbffe5f5b1df9e68e7b75f83901d4);
             
         
 
-        circle_marker_1f006a4e085cad679f664fbb5d262020.bindPopup(popup_3344393cb08bdc276eabd5a02541bdb1)
+        circle_marker_891961d1d282526c81353dd68a9feab3.bindPopup(popup_6b4830062d7c7192cd023e3ff1f6a8df)
         ;
 
         
     
     
-            var circle_marker_4136f4975c7f379eb42a1d67612075eb = L.circleMarker(
+            var circle_marker_7d6ce2b9549ea239634cd559a5134bdd = L.circleMarker(
                 [45.222595, 6.136635],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_162811a3cdcb96ff9e320ca0e68a58b6 = L.popup({
+        var popup_34e1a15372c452f37c0bc4b1f53d8e7a = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_a7dd5b4b217ff5d75211ae77fe45850f = $(`<div id=&quot;html_a7dd5b4b217ff5d75211ae77fe45850f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I21<br></div>`)[0];
-                popup_162811a3cdcb96ff9e320ca0e68a58b6.setContent(html_a7dd5b4b217ff5d75211ae77fe45850f);
+                var html_b404e46a5283854e08f7320830ff8063 = $(`<div id=&quot;html_b404e46a5283854e08f7320830ff8063&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: rieu_1<br>id_placette: 1<br>Enregistreur 2025:I21</div>`)[0];
+                popup_34e1a15372c452f37c0bc4b1f53d8e7a.setContent(html_b404e46a5283854e08f7320830ff8063);
             
         
 
-        circle_marker_4136f4975c7f379eb42a1d67612075eb.bindPopup(popup_162811a3cdcb96ff9e320ca0e68a58b6)
+        circle_marker_7d6ce2b9549ea239634cd559a5134bdd.bindPopup(popup_34e1a15372c452f37c0bc4b1f53d8e7a)
         ;
 
         
     
     
-            var circle_marker_1a561233b642022b1eb46a653d92b246 = L.circleMarker(
+            var circle_marker_2f7410adf203b10fc67eef41cb297926 = L.circleMarker(
                 [45.22126167, 6.134628333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_5bc722ed692b6f53830294d1e182dc20 = L.popup({
+        var popup_93bffe785d0cfef80cdb18f767fcda2e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d7c1a10df2d79c918166abe2c18f859f = $(`<div id=&quot;html_d7c1a10df2d79c918166abe2c18f859f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I6<br></div>`)[0];
-                popup_5bc722ed692b6f53830294d1e182dc20.setContent(html_d7c1a10df2d79c918166abe2c18f859f);
+                var html_059781d977fef408069979438491b5ec = $(`<div id=&quot;html_059781d977fef408069979438491b5ec&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: rieu_2_bas<br>id_placette: 2<br>Enregistreur 2025:I6</div>`)[0];
+                popup_93bffe785d0cfef80cdb18f767fcda2e.setContent(html_059781d977fef408069979438491b5ec);
             
         
 
-        circle_marker_1a561233b642022b1eb46a653d92b246.bindPopup(popup_5bc722ed692b6f53830294d1e182dc20)
+        circle_marker_2f7410adf203b10fc67eef41cb297926.bindPopup(popup_93bffe785d0cfef80cdb18f767fcda2e)
         ;
 
         
     
     
-            var circle_marker_3d7ea76be88eefdf3d10c3a7f112632c = L.circleMarker(
+            var circle_marker_e648a9101b90523828db903cbca7f0e0 = L.circleMarker(
                 [45.22171667, 6.133871667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_dd93f4ffc8401267581f214a9a19bb3c = L.popup({
+        var popup_2a5572ff77a63d833800070550a9b97d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_ed2a075eb20990428f2e9d64ca4e291f = $(`<div id=&quot;html_ed2a075eb20990428f2e9d64ca4e291f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM04<br></div>`)[0];
-                popup_dd93f4ffc8401267581f214a9a19bb3c.setContent(html_ed2a075eb20990428f2e9d64ca4e291f);
+                var html_34e3dbd0cc759db41b00655ff3323ffa = $(`<div id=&quot;html_34e3dbd0cc759db41b00655ff3323ffa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: rieu_3_milieu<br>id_placette: 3<br>Enregistreur 2025:AM04</div>`)[0];
+                popup_2a5572ff77a63d833800070550a9b97d.setContent(html_34e3dbd0cc759db41b00655ff3323ffa);
             
         
 
-        circle_marker_3d7ea76be88eefdf3d10c3a7f112632c.bindPopup(popup_dd93f4ffc8401267581f214a9a19bb3c)
+        circle_marker_e648a9101b90523828db903cbca7f0e0.bindPopup(popup_2a5572ff77a63d833800070550a9b97d)
         ;
 
         
     
     
-            var circle_marker_38035ca0a009bc52da9be25d02728497 = L.circleMarker(
+            var circle_marker_12bc13d315be2a447a9b8fe4ce945d65 = L.circleMarker(
                 [45.22188667, 6.132923333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_31bd8b231f6c0fbe36201370a708ed78 = L.popup({
+        var popup_2e246bea78fb725a7908e8f2ac988ef9 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_08cca9f3bf9a135ad7927a5268238fad = $(`<div id=&quot;html_08cca9f3bf9a135ad7927a5268238fad&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I25<br></div>`)[0];
-                popup_31bd8b231f6c0fbe36201370a708ed78.setContent(html_08cca9f3bf9a135ad7927a5268238fad);
+                var html_a7a007541f0db74daeb6b6306a5ed2a1 = $(`<div id=&quot;html_a7a007541f0db74daeb6b6306a5ed2a1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: rieu_4_haut<br>id_placette: 4<br>Enregistreur 2025:I25</div>`)[0];
+                popup_2e246bea78fb725a7908e8f2ac988ef9.setContent(html_a7a007541f0db74daeb6b6306a5ed2a1);
             
         
 
-        circle_marker_38035ca0a009bc52da9be25d02728497.bindPopup(popup_31bd8b231f6c0fbe36201370a708ed78)
+        circle_marker_12bc13d315be2a447a9b8fe4ce945d65.bindPopup(popup_2e246bea78fb725a7908e8f2ac988ef9)
         ;
 
         
     
     
-            var circle_marker_ccd801a078727fbc5bcef00b8a31b206 = L.circleMarker(
+            var circle_marker_747fe65c4996d00ba2701e831b4a4534 = L.circleMarker(
                 [45.21977, 6.129935],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_2b4b78fd648210ea8d1e46f876dc9aee = L.popup({
+        var popup_3eaf3b39df29d0de33dae4d732cc202d = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_86884edcf841ad412f20d87f71ccc8cc = $(`<div id=&quot;html_86884edcf841ad412f20d87f71ccc8cc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I1<br></div>`)[0];
-                popup_2b4b78fd648210ea8d1e46f876dc9aee.setContent(html_86884edcf841ad412f20d87f71ccc8cc);
+                var html_3964b9745d4235c0d2fa07526a62defc = $(`<div id=&quot;html_3964b9745d4235c0d2fa07526a62defc&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: courbassiere_haut_2<br>id_placette: 7<br>Enregistreur 2025:I1</div>`)[0];
+                popup_3eaf3b39df29d0de33dae4d732cc202d.setContent(html_3964b9745d4235c0d2fa07526a62defc);
             
         
 
-        circle_marker_ccd801a078727fbc5bcef00b8a31b206.bindPopup(popup_2b4b78fd648210ea8d1e46f876dc9aee)
+        circle_marker_747fe65c4996d00ba2701e831b4a4534.bindPopup(popup_3eaf3b39df29d0de33dae4d732cc202d)
         ;
 
         
     
     
-            var circle_marker_023f0e10716c4945fb2150fcdf8d140f = L.circleMarker(
+            var circle_marker_21847769b7f9540b677a451281f8a200 = L.circleMarker(
                 [45.22043667, 6.130751667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_30e1c33e8ea78d34588d070669885567 = L.popup({
+        var popup_be3b5bfdf41239223c3b3537691bec51 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_37e5b4ffea32c3e093ea91a8872fd9f2 = $(`<div id=&quot;html_37e5b4ffea32c3e093ea91a8872fd9f2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I8<br></div>`)[0];
-                popup_30e1c33e8ea78d34588d070669885567.setContent(html_37e5b4ffea32c3e093ea91a8872fd9f2);
+                var html_b2a9115474297ae5fbe38017e016dfc0 = $(`<div id=&quot;html_b2a9115474297ae5fbe38017e016dfc0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: courbassiere_haut_1<br>id_placette: 6<br>Enregistreur 2025:I8</div>`)[0];
+                popup_be3b5bfdf41239223c3b3537691bec51.setContent(html_b2a9115474297ae5fbe38017e016dfc0);
             
         
 
-        circle_marker_023f0e10716c4945fb2150fcdf8d140f.bindPopup(popup_30e1c33e8ea78d34588d070669885567)
+        circle_marker_21847769b7f9540b677a451281f8a200.bindPopup(popup_be3b5bfdf41239223c3b3537691bec51)
         ;
 
         
     
     
-            var circle_marker_e8739fbfdd9adb8980f64d5b790fa59a = L.circleMarker(
+            var circle_marker_d59516a1c552ed6f3dc47ad5db3308ae = L.circleMarker(
                 [45.218095, 6.124345],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_43924b439592431d453ffcdfd97dd90f = L.popup({
+        var popup_de7b827474a4a30704acaad8de4491f1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_95a5701bac9c51e07e26c5bdda167026 = $(`<div id=&quot;html_95a5701bac9c51e07e26c5bdda167026&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I29<br></div>`)[0];
-                popup_43924b439592431d453ffcdfd97dd90f.setContent(html_95a5701bac9c51e07e26c5bdda167026);
+                var html_a3d290cbc92c06f1950f9ad41c746e09 = $(`<div id=&quot;html_a3d290cbc92c06f1950f9ad41c746e09&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: col_ane_1<br>id_placette: 12<br>Enregistreur 2025:I29</div>`)[0];
+                popup_de7b827474a4a30704acaad8de4491f1.setContent(html_a3d290cbc92c06f1950f9ad41c746e09);
             
         
 
-        circle_marker_e8739fbfdd9adb8980f64d5b790fa59a.bindPopup(popup_43924b439592431d453ffcdfd97dd90f)
+        circle_marker_d59516a1c552ed6f3dc47ad5db3308ae.bindPopup(popup_de7b827474a4a30704acaad8de4491f1)
         ;
 
         
     
     
-            var circle_marker_4c2072fea7a844812c962649868b73e3 = L.circleMarker(
+            var circle_marker_1b72c69b0c583495f544eddbedf4091f = L.circleMarker(
                 [45.21647, 6.112185],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_4effae87d43e40c5144b2e92dafbf1e2 = L.popup({
+        var popup_ae572c0f0e4278a7f878e63cb3f92f9b = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_952d52c82941522659ed22c3b7a5e7f3 = $(`<div id=&quot;html_952d52c82941522659ed22c3b7a5e7f3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: AM08<br></div>`)[0];
-                popup_4effae87d43e40c5144b2e92dafbf1e2.setContent(html_952d52c82941522659ed22c3b7a5e7f3);
+                var html_0a36a93f560ba5aba8416862c5953d29 = $(`<div id=&quot;html_0a36a93f560ba5aba8416862c5953d29&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: sous_lac_ane_2<br>id_placette: 19<br>Enregistreur 2025:AM08</div>`)[0];
+                popup_ae572c0f0e4278a7f878e63cb3f92f9b.setContent(html_0a36a93f560ba5aba8416862c5953d29);
             
         
 
-        circle_marker_4c2072fea7a844812c962649868b73e3.bindPopup(popup_4effae87d43e40c5144b2e92dafbf1e2)
+        circle_marker_1b72c69b0c583495f544eddbedf4091f.bindPopup(popup_ae572c0f0e4278a7f878e63cb3f92f9b)
         ;
 
         
     
     
-            var circle_marker_ba6f795c35aee8c12a1f948287e53265 = L.circleMarker(
+            var circle_marker_7647d700414a5660dbf54b72286e5bbf = L.circleMarker(
                 [45.21693, 6.113213333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_45d57d67f98e04279d8d7af48d17b2f1 = L.popup({
+        var popup_546e0f065376cbb3da5b2d9d8b0be2e0 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_a18508ec0fd90a52463901d46d83b40d = $(`<div id=&quot;html_a18508ec0fd90a52463901d46d83b40d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: RouteCH<br></div>`)[0];
-                popup_45d57d67f98e04279d8d7af48d17b2f1.setContent(html_a18508ec0fd90a52463901d46d83b40d);
+                var html_456481a744ffcbb9102164606b809ec8 = $(`<div id=&quot;html_456481a744ffcbb9102164606b809ec8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: sous_lac_ane_1<br>id_placette: 18<br>Enregistreur 2025:RouteCH</div>`)[0];
+                popup_546e0f065376cbb3da5b2d9d8b0be2e0.setContent(html_456481a744ffcbb9102164606b809ec8);
             
         
 
-        circle_marker_ba6f795c35aee8c12a1f948287e53265.bindPopup(popup_45d57d67f98e04279d8d7af48d17b2f1)
+        circle_marker_7647d700414a5660dbf54b72286e5bbf.bindPopup(popup_546e0f065376cbb3da5b2d9d8b0be2e0)
         ;
 
         
     
     
-            var circle_marker_f659acf360a26baff2d58b40f9e53e94 = L.circleMarker(
+            var circle_marker_26b943549b66fe822b81042a9e13bcca = L.circleMarker(
                 [45.21952167, 6.123273333],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_491cbe3707f3b9002b60fed8631aa102 = L.popup({
+        var popup_3455ffb13ec77be2c38ab6e64048d1b1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_188172c182c904bd313c7fc2e8ef5ae6 = $(`<div id=&quot;html_188172c182c904bd313c7fc2e8ef5ae6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I22<br></div>`)[0];
-                popup_491cbe3707f3b9002b60fed8631aa102.setContent(html_188172c182c904bd313c7fc2e8ef5ae6);
+                var html_7e83b1c54ca95d4fffb1a72fb47d4c39 = $(`<div id=&quot;html_7e83b1c54ca95d4fffb1a72fb47d4c39&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: col_ane_5<br>id_placette: 16<br>Enregistreur 2025:I22</div>`)[0];
+                popup_3455ffb13ec77be2c38ab6e64048d1b1.setContent(html_7e83b1c54ca95d4fffb1a72fb47d4c39);
             
         
 
-        circle_marker_f659acf360a26baff2d58b40f9e53e94.bindPopup(popup_491cbe3707f3b9002b60fed8631aa102)
+        circle_marker_26b943549b66fe822b81042a9e13bcca.bindPopup(popup_3455ffb13ec77be2c38ab6e64048d1b1)
         ;
 
         
     
     
-            var circle_marker_021c4c03e3d8d7c9f85188439fe42f00 = L.circleMarker(
+            var circle_marker_172b1934db849f0a9fa78b1f03cc3948 = L.circleMarker(
                 [45.21833833, 6.122666667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_b73651fc932112c6b840db33f1d3813b = L.popup({
+        var popup_79ecd6475333fd25688e5fb5e9564678 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_d68bf0ad7f2f19f548050f3648888641 = $(`<div id=&quot;html_d68bf0ad7f2f19f548050f3648888641&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I13<br></div>`)[0];
-                popup_b73651fc932112c6b840db33f1d3813b.setContent(html_d68bf0ad7f2f19f548050f3648888641);
+                var html_b13608937703aac0876f625b155db230 = $(`<div id=&quot;html_b13608937703aac0876f625b155db230&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: col_ane_4<br>id_placette: 15<br>Enregistreur 2025:I13</div>`)[0];
+                popup_79ecd6475333fd25688e5fb5e9564678.setContent(html_b13608937703aac0876f625b155db230);
             
         
 
-        circle_marker_021c4c03e3d8d7c9f85188439fe42f00.bindPopup(popup_b73651fc932112c6b840db33f1d3813b)
+        circle_marker_172b1934db849f0a9fa78b1f03cc3948.bindPopup(popup_79ecd6475333fd25688e5fb5e9564678)
         ;
 
         
     
     
-            var circle_marker_9918648de38ce88e66f6d3d8f77a2bb7 = L.circleMarker(
+            var circle_marker_9a31282bc131257ae91065924eab30b5 = L.circleMarker(
                 [45.21793167, 6.123648333],
-                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_5ca0d7bd1ceb0b2a802f363b5391f481 = L.popup({
+        var popup_ce9f1f5d327f6aae737029fef753c353 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_52ca7b57aecd97219161a71ef445fa29 = $(`<div id=&quot;html_52ca7b57aecd97219161a71ef445fa29&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I23<br></div>`)[0];
-                popup_5ca0d7bd1ceb0b2a802f363b5391f481.setContent(html_52ca7b57aecd97219161a71ef445fa29);
+                var html_b47662d5a80f7ab565dc4d42f18db31c = $(`<div id=&quot;html_b47662d5a80f7ab565dc4d42f18db31c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: col_ane_3<br>id_placette: 14<br>Enregistreur 2025:I23</div>`)[0];
+                popup_ce9f1f5d327f6aae737029fef753c353.setContent(html_b47662d5a80f7ab565dc4d42f18db31c);
             
         
 
-        circle_marker_9918648de38ce88e66f6d3d8f77a2bb7.bindPopup(popup_5ca0d7bd1ceb0b2a802f363b5391f481)
+        circle_marker_9a31282bc131257ae91065924eab30b5.bindPopup(popup_ce9f1f5d327f6aae737029fef753c353)
         ;
 
         
     
     
-            var circle_marker_5d81f4b15bf6e84d17d290965a903ca0 = L.circleMarker(
+            var circle_marker_54b0b3cd1db4320df94ea5f46afc4555 = L.circleMarker(
                 [45.217705, 6.123641667],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.8, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
         
     
-        var popup_0add344883d4269a7fe5037c947628c4 = L.popup({
+        var popup_16f3a1d2d978f2aeaa50883041f81add = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
         
             
-                var html_7232ff0323c89cebed8a49786870dcbe = $(`<div id=&quot;html_7232ff0323c89cebed8a49786870dcbe&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Enregistreur: I15<br></div>`)[0];
-                popup_0add344883d4269a7fe5037c947628c4.setContent(html_7232ff0323c89cebed8a49786870dcbe);
+                var html_3a8de6d914c80f5039d32aa1770fa78c = $(`<div id=&quot;html_3a8de6d914c80f5039d32aa1770fa78c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Placette: col_ane_2<br>id_placette: 13<br>Enregistreur 2025:I15</div>`)[0];
+                popup_16f3a1d2d978f2aeaa50883041f81add.setContent(html_3a8de6d914c80f5039d32aa1770fa78c);
             
         
 
-        circle_marker_5d81f4b15bf6e84d17d290965a903ca0.bindPopup(popup_0add344883d4269a7fe5037c947628c4)
+        circle_marker_54b0b3cd1db4320df94ea5f46afc4555.bindPopup(popup_16f3a1d2d978f2aeaa50883041f81add)
         ;
 
         
     
     
-            var layer_control_2d53b6feb865622de9b9e8a0cf7ceb42_layers = {
+            var layer_control_a71328163f10a2f94b412da8473f841f_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_d01f4497f6129c1c623de0446231b95c,
-                    &quot;Satellite&quot; : tile_layer_6cc789bab5946973e088fc8035e32970,
+                    &quot;openstreetmap&quot; : tile_layer_5b8df0ba01bbbdf47de6c409156a0b23,
+                    &quot;Satellite&quot; : tile_layer_3b57a1c0b6ebaee3a17f6885adf2bf5f,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_2d53b6feb865622de9b9e8a0cf7ceb42 = L.control.layers(
-                layer_control_2d53b6feb865622de9b9e8a0cf7ceb42_layers.base_layers,
-                layer_control_2d53b6feb865622de9b9e8a0cf7ceb42_layers.overlays,
+            let layer_control_a71328163f10a2f94b412da8473f841f = L.control.layers(
+                layer_control_a71328163f10a2f94b412da8473f841f_layers.base_layers,
+                layer_control_a71328163f10a2f94b412da8473f841f_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_091794ddc5a394a015ca70288a6986b2);
+            ).addTo(map_142ee568a44d2e44ea21e5542d26c956);
 
         
 </script>
@@ -1082,7 +1086,7 @@ timeline
 <div class="callout-body-container callout-body">
 <div id="c4db62ad-fe91-4560-bd1c-eaa63a1d348c" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="660" src="iframe_figures/figure_2.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="660" src="iframe_figures/figure_33.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 </div>
@@ -1094,18 +1098,123 @@ timeline
 <p>La figure 3 nous montre les précipitations et la température relevés par la station météo de l’âne. Une courbe fine toutes les 10 minutes est disponible ainsi qu’une variation journalière.</p>
 <div id="5e8c9c1a-1c61-4ab8-9411-c7770ec13fc0" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="520" src="iframe_figures/figure_3.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="520" src="iframe_figures/figure_34.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p>Précipitation et température relevé par la station metéo de Belledonne</p>
-</div></div></section>
+</div></div><section id="pluie" class="level3">
+<h3 class="anchored" data-anchor-id="pluie">Pluie</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Détection automatique de pluie par analyse audio via trasfert learning
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<section id="détection-automatique-de-pluie-par-analyse-audio" class="level4">
+<h4 class="anchored" data-anchor-id="détection-automatique-de-pluie-par-analyse-audio">Détection automatique de pluie par analyse audio</h4>
+<ol type="1">
+<li><p><strong>Approche méthodologique</strong> Nous avons developpé un modèle de classification automatique pour la détection de pluie dans des enregistrements audio (sur audiomoth). Le modèle s’appuie sur l’architecture Audio Spectrogram Transformer (AST), un réseau de neurones de type Vision Transformer adapté aux spectrogrammes audio, pré-entraîné sur AudioSet (2 millions d’échantillons) (Framework : PyTorch + HuggingFace Transformers). Ce modèle est choisi pour ses performances dans l’état de l’art en classification audio et son tranfert learning facile et efficace. Les enregistrements audio bruts (1 minute, 96 kHz) sont d’abord rééchantillonnés à 16 kHz puis segmentés en extraits de 10 secondes avant d’être convertis en spectrogrammes de dimensions 1024×128, format d’entrée du modèle via <code>AutoFeatureExtractor (HuggingFace)</code>.</p></li>
+<li><p><strong>Construction du dataset et entraînement</strong> Le dataset d’entraînement a été construit à partir de 1885 fichiers audio (944 “Dry” et 941 “Rain”) vérifiés manuellement (spectrogramme + audio) (<code>creation_dataset_pluie.py</code>+<code>dataset_rain_verif.py</code>). Le dataset est ici: <code>G:\Insect_Belledonne_2025\dataset_rain</code>. La segmentation en extraits de 10 secondes a permis d’obtenir 11 213 segments parfaitement équilibrés (50.2% Dry / 49.8% Rain), augmentant ainsi la taille du dataset d’un facteur 6. Les features extraites sont enregistrées ici: <code>\Meteo+vegetation\Meteo+dataframe\dataset_balanced_10sec</code> avec le code <code>preprocess_balanceddata.py</code>. Ce dataset a ensuite été divisé en ensemble d’entraînement (8970 segments, 80%) et de validation (2243 segments, 20%) de manière stratifiée pour maintenir l’équilibre des classes. Le fine-tuning du modèle a été effectué en deux phases : une première phase de validation rapide sur un subset de 1000 échantillons (accuracy 93.0%, F1 92.5%) pour tester l’architecture (script: <code>train_balanced.py</code>; modèle enregistré : <code>ast_balanced_clean_final</code>), suivie d’un fine-tuning complet sur l’ensemble des données avec des hyperparamètres optimisés (learning rate 5e-6, batch size 16, epoch 3, early stopping) (script : <code>train_balanced_full.py</code>;modèle enregistré : <code>ast_final_full_20260204_1542</code>). Les performances sur le dataset de validation équilibré ont une accuracy de 95.5%, une precision de 96.4%, un recall de 94.5% et un F1-score de 95.4%.</p></li>
+<li><p><strong>Validation terrain et optimisation</strong> La validation en conditions réelles a été réalisée sur le site AM02 avec 570 fichiers audio annotés manuellement (ground truth). Ce dataset de test, sélectionné sur le critère que la station météorologique ou le modèle AST détectait de la pluie, présentait un déséquilibre naturel enrichi en événements pluvieux. Avec le seuil de classification par défaut (0.45), le modèle AST démontre un recall de 95.1% (détection de la quasi-totalité des événements pluvieux) mais une precision limitée à 65.0%, résultant en 158 faux positifs (script : <code>predict_rain_AST_optim.py</code>). Cette configuration privilégie la détection maximale au détriment de la fiabilité. Une analyse systématique de 200 seuils de décision (0.00 à 1.00) a été faite pour optimiser le compromis precision-recall. Le seuil optimal identifié à 0.94 permet d’atteindre une precision de 90.5% tout en maintenant un recall de 83.8%, soit une amélioration du F1-score de 9.8 points (87.0% vs 77.2%). La comparaison avec la station météorologique révèle des performances globalement comparables en accuracy (69.5-69.6%) mais le modèle AST avec seuil optimisé surpasse significativement la station en precision (+21.9%) tout en maintenant un F1-score supérieur (87.0% vs 74.0%).</p></li>
+</ol>
+</section>
+<section id="performances-synthétiques" class="level4">
+<h4 class="anchored" data-anchor-id="performances-synthétiques">Performances synthétiques</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Dataset</th>
+<th>Samples</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1</th>
+<th>Contexte</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>transfert learning 1; Validation rapide</td>
+<td>Subset équilibré</td>
+<td>200</td>
+<td>93.0%</td>
+<td>95.5%</td>
+<td>91.5%</td>
+<td>92.5%</td>
+<td>Test architecture</td>
+</tr>
+<tr class="even">
+<td>Fine-tuning</td>
+<td>Dataset pluie : Complet équilibré</td>
+<td>2243</td>
+<td>95.5%</td>
+<td>96.4%</td>
+<td>94.5%</td>
+<td>95.4%</td>
+<td>Dataset validation</td>
+</tr>
+<tr class="odd">
+<td>Terrain (seuil 0.45)</td>
+<td>AM02 non équilibré</td>
+<td>570</td>
+<td>69.6%</td>
+<td>65.0%</td>
+<td>95.1%</td>
+<td>77.2%</td>
+<td>Seuil par défaut</td>
+</tr>
+<tr class="even">
+<td><strong>Terrain (seuil 0.94)</strong></td>
+<td><strong>AM02 non équilibré</strong></td>
+<td><strong>570</strong></td>
+<td><strong>~77%</strong></td>
+<td><strong>90.5%</strong></td>
+<td><strong>83.8%</strong></td>
+<td><strong>87.0%</strong></td>
+<td><strong>Configuration optimale</strong></td>
+</tr>
+<tr class="odd">
+<td>Station météo</td>
+<td>AM02 non équilibré</td>
+<td>570</td>
+<td>69.5%</td>
+<td>68.6%</td>
+<td>80.2%</td>
+<td>74.0%</td>
+<td>Référence comparative</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+</div>
+</section>
+</section>
 </section>
 <section id="répartition-de-lutilisation-de-lespace-des-brebis-et-des-bouquetins" class="level1 page-columns page-full">
 <h1>Répartition de l’utilisation de l’espace des brebis et des bouquetins</h1>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1114,7 +1223,7 @@ timeline
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <section id="bouquetins" class="level3">
 <h3 class="anchored" data-anchor-id="bouquetins">Bouquetins</h3>
@@ -1453,92 +1562,27 @@ iso_UD :
 </section>
 <section id="paysages-sonores-enregistrés" class="level1 page-columns page-full">
 <h1>Paysages sonores enregistrés</h1>
-<section id="spectrogramme-long-terme" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="spectrogramme-long-terme">Spectrogramme long terme</h2>
-<p>La figure 4 permet de voir les spectrogrammes long terme de chaque enregistreurs. Un menu déroulant permet de choisir l’enregistreur désiré. Une photo de la map avec le nom de tous les enregistreurs est en fin de page.</p>
-<h4 class="anchored">
-Choisir un logger :
-</h4>
-<p><select id="loggerDropdown" onchange="changeLogger()"> <option>Chargement…</option> </select></p>
-<p><br><br></p>
-<iframe id="ltsaFrame" width="100%" height="400" frameborder="0">
-</iframe>
-<script>
-// --------------------------------------------------------------
-// Liste des loggers intégrée directement (HTML autonome)
-// --------------------------------------------------------------
-const files = [
-  "AM02.html", "AM04.html", "AM08.html", "AM09.html", "CH10.html",
-  "CH12.html", "CH14.html", "CH17.html", "CH20.html", "I1.html",
-  "I10.html", "I12.html", "I13.html", "I14.html", "I15.html",
-  "I16.html", "I19.html", "I20.html", "I21.html", "I22.html",
-  "I23.html", "I25.html", "I26.html", "I27.html", "I29.html",
-  "I30.html", "I4.html", "I6.html", "I7.html", "I8.html", "I9.html",
-  "RouteCH.html"
-];
-
-// --------------------------------------------------------------
-// Remplir le dropdown
-// --------------------------------------------------------------
-const dropdown = document.getElementById("loggerDropdown");
-dropdown.innerHTML = ""; // vider l'option par défaut
-
-files.forEach(file => {
-    const opt = document.createElement("option");
-    opt.value = file;  // le nom du fichier HTML
-    opt.textContent = file.replace(".html", ""); // affichage propre
-    dropdown.appendChild(opt);
-});
-
-// Sélectionner automatiquement le premier
-if (files.length > 0) {
-    dropdown.value = files[0];
-    changeLogger();
-}
-
-// --------------------------------------------------------------
-// Mettre à jour l'iframe quand un logger est choisi
-// --------------------------------------------------------------
-function changeLogger() {
-    const file = document.getElementById("loggerDropdown").value;
-    document.getElementById("ltsaFrame").src =
-        "LTSAforhtml/iframe_figures/" + file;
-}
-</script>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p>Spectrogramme long terme de chaque logger</p>
-</div></div></section>
 <section id="leq" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="leq">Leq</h2>
 <p>La figure 5 montre l’évolution du Leq (entre 6 et 44 kHz) associée à celle de la météo</p>
-<div id="9d4b1965-5478-437c-9a83-790a3335ee55" class="cell" data-execution_count="5">
+<div id="9d4b1965-5478-437c-9a83-790a3335ee55" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="420" src="iframe_figures/figure_5.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="420" src="iframe_figures/figure_35.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p>Evolution du LEq - disponible pour 3 périodes avec choix du ou des enregistreurs souhaités – Fenêtres temporelles &amp; météo synchronisées. Le choix des courbes visibles est dynamique; il suffit de cliquer deux fois sur un enregistreur pour n’afficher que sa courbe et passer tous les autres en invisible. On peut additionner ensuite autant de courbe qu’on le veut en cliquant sur les courbes que l’on souhaite ajouter.</p>
 </div></div><p>Une autre visualisation en heatmap est disponible sur la figure 6. Avec coloration en mauve pour insecte et en vert pour la pluie (pour le moment les données proviennent de la station météo)</p>
-<div id="be042ece-a426-4be6-be3c-7aac5a2f79e9" class="cell" data-execution_count="6">
+<div id="be042ece-a426-4be6-be3c-7aac5a2f79e9" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="720px" height="370" src="iframe_figures/figure_6.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="720px" height="370" src="iframe_figures/figure_36.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-<div id="79dfcd0a-1276-4a5b-8a72-72f19cec73e9" class="cell" data-execution_count="7">
-<div class="cell-output cell-output-display">
-<iframe scrolling="no" width="720px" height="370" src="iframe_figures/figure_7.html" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-<div id="cell-photo-map" class="cell" data-execution_count="8">
-<div class="cell-output cell-output-display">
-<div id="photo-map" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="index_files/figure-html/photo-map-output-1.png" width="763" height="456" class="figure-img"></p>
-<figcaption>Photo de la map avec les noms des enregistreurs</figcaption>
-</figure>
-</div>
+<div id="cell-photo-map" class="cell" data-execution_count="6">
+<div id="photo-map" class="cell-output cell-output-display">
+<iframe scrolling="no" width="820px" height="570" src="iframe_figures/figure_37.html" frameborder="0" allowfullscreen=""></iframe>
+<p>Photo de la map avec différents affichages</p>
 </div>
 </div>
 </section>
@@ -1761,7 +1805,7 @@ Votre navigateur ne supporte pas la lecture audio. </audio>
 Votre navigateur ne supporte pas la lecture audio. </audio>
 </figure>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1770,7 +1814,7 @@ Votre navigateur ne supporte pas la lecture audio. </audio>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <section id="téléchargement-de-la-base-de-données-daudio-insectes" class="level4">
 <h4 class="anchored" data-anchor-id="téléchargement-de-la-base-de-données-daudio-insectes">Téléchargement de la base de données d’audio insectes</h4>
@@ -1912,7 +1956,7 @@ Votre navigateur ne supporte pas la lecture audio. </audio>
 <h4 class="anchored" data-anchor-id="test-paramètriques-de-ntempi">Test paramètriques de NTempi</h4>
 <p>Création de 800 soundscapes avec entre 1 et 30 insectes. Les paramètres de NTempi ont été optimisés et finalement bloqués sur les paramètres ci-dessous.</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1921,7 +1965,7 @@ Votre navigateur ne supporte pas la lecture audio. </audio>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Séparation spectrale (identification des bandes fréquentielles)</li>
@@ -1985,7 +2029,7 @@ Analyse de NTempi sur les soundscapes de synthèse
 \left( N_{\text{réel}, i} - N_{\text{Tempi}, i} \right)
 \]</span></p>
 </div></div><div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1994,7 +2038,7 @@ Analyse de NTempi sur les soundscapes de synthèse
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <section id="analyse-de-ntempi-pour-des-soundscapes-créés-uniquement-à-partir-denregistrement-dune-unique-espèce-vs-toutes-les-espèces-combinés." class="level4">
 <h4 class="anchored" data-anchor-id="analyse-de-ntempi-pour-des-soundscapes-créés-uniquement-à-partir-denregistrement-dune-unique-espèce-vs-toutes-les-espèces-combinés.">Analyse de Ntempi pour des soundscapes créés uniquement à partir d’enregistrement d’une unique espèce vs toutes les espèces combinés.</h4>
@@ -2037,13 +2081,13 @@ Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espè
 <h2 class="anchored" data-anchor-id="ntempi-sur-nos-enregistrements-réels">Ntempi sur nos enregistrements réels</h2>
 <p>Les enregistrements sont préalablement filtrés pour atténuer le bruit de fond.</p>
 <p>Un filtre coupe-bande est appliqué avec une fréquence de coupure de 6000Hz puis un filtrage du bruit stationnaire est appliqué entre 6000 et 48000Hz. La méthode retenue est le lissage gaussien 2D (avec la fonction remove_background de scikit maad). Application d’un filtre gaussien bidimensionnel sur le spectrogramme pour estimer le bruit de fond, puis soustraction spectrale - Filtrage simultané dans les dimensions temporelle et fréquentielle. D’autres filtres ont été testé dont un particulèrement : remove_background_along_axis dont le principe est le calcul du profil de bruit médian pour chaque fréquence sur toute la durée de l’enregistrement, puis soustraction - Filtrage unidimensionnel le long de l’axe fréquentiel. Ce filtrage très efficace est trop fort et efface beaucoup de nos bruits d’insectes.</p>
-<div id="8b6e2c56-d626-4e95-90d5-cdf318f57107" class="cell" data-execution_count="9">
+<div id="8b6e2c56-d626-4e95-90d5-cdf318f57107" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="870" src="iframe_figures/figure_9.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="870" src="iframe_figures/figure_38.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -2052,24 +2096,24 @@ Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espè
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="440caaa5-ad97-410c-a52c-fb814f794e8b" class="cell" data-execution_count="10">
+<div id="440caaa5-ad97-410c-a52c-fb814f794e8b" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="720px" height="770" src="iframe_figures/figure_10.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="720px" height="770" src="iframe_figures/figure_39.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="52988851-cac1-4151-a5bf-3179b856d480" class="cell" data-execution_count="11">
+<div id="b37d1240-d6af-480a-8dc0-f7daef644c3b" class="cell" data-execution_count="9">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="720px" height="820" src="iframe_figures/figure_11.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="770px" height="1520" src="iframe_figures/figure_40.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-<div id="be5bc92c-b59c-49c9-9c19-f20103417393" class="cell" data-execution_count="12">
+<div id="2035570f-041b-405c-86ab-208a04ec0fe9" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="470" src="iframe_figures/figure_12.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="470" src="iframe_figures/figure_41.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 
@@ -2081,7 +2125,7 @@ Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espè
 </div>
 </div></div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -2090,7 +2134,7 @@ Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espè
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Tous les scripts sont développés dans l’environnement virtuel ntempi (sous le projet NTempi-dev) et sont sauvegardés ici : <code>C:\Users\tm105667\NTempi-dev</code></p>
 <ol type="1">
@@ -2100,6 +2144,317 @@ Performance de Ntempi sur les soundscapes de synthèses avec un pool de 15 espè
 </ol>
 </div>
 </div>
+</div>
+</section>
+</section>
+<section id="composition-du-dataframe-final" class="level1">
+<h1>Composition du dataframe final</h1>
+<div class="figure">
+<p><img src="data/image/Dataframe_compo.png" width="800" height="200"></p>
+<p>
+Activité.
+</p>
+</div>
+<div class="text-left">
+<ol type="1">
+<li><strong>Métadonnées</strong></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th style="text-align: left;">Distribution valeurs</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>id_place</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Numéro de placette (1 à 32 pour 2025 et on en a 11 pour 2023 (avec correspondances 2023/2025)</td>
+</tr>
+<tr class="even">
+<td>name_place</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Nom explicite des placettes en fonction de leur emplacement sur la réserve</td>
+</tr>
+<tr class="odd">
+<td>coord_x</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Coordonnées x</td>
+</tr>
+<tr class="even">
+<td>coord_y</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Coordonnées y</td>
+</tr>
+<tr class="odd">
+<td>altitude</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Altitude</td>
+</tr>
+<tr class="even">
+<td>slope_s2m</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Pente</td>
+</tr>
+<tr class="odd">
+<td>recorder</td>
+<td style="text-align: left;">1 par placette <br> et par année</td>
+<td style="text-align: left;">Nom de l’enregistreur déposé</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li><strong>Facteurs temporels</strong></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th style="text-align: left;">Distribution valeurs</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>year</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Année</td>
+</tr>
+<tr class="even">
+<td>datetime_local</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">date en format 2025-06-18 00:00:00+02:00 (heure locale)</td>
+</tr>
+<tr class="odd">
+<td>datetime_UTC</td>
+<td style="text-align: left;">1 par horadatage (et placette)</td>
+<td style="text-align: left;">date en format 2025-06-18 00:00:00+00:00 (heure UTC)</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="1">
+<li><strong>Acoustique insectes</strong></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th style="text-align: left;">Distribution valeurs</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SAT</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Pourcentage de saturation de l’enregistrement (existe saturation vent et saturation insectes)</td>
+</tr>
+<tr class="even">
+<td>Presence_insect</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Présence ou absence d’orthoptères via ML (entrainement d’un CNN avec mel-spectrogramme sur 1 minute et ajustement du seuil)</td>
+</tr>
+<tr class="odd">
+<td>Leq</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">niveau de pression acoustique continu (entre 6 et 46 kHz) - attention le Leq prend aussi en compte le bruit de fond, la pluie, le vent, les moutons…</td>
+</tr>
+<tr class="even">
+<td>SNR</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">niveau de signal sur bruit (entre 6 et 46 kHz) - SNR &lt; 5 dB → activité faible / bruit dominant - &gt; 15 dB → forte activité ou individus proches - - attention le SNR prend aussi en compte la pluie, le vent, les moutons…</td>
+</tr>
+<tr class="odd">
+<td>NTempi</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Comptage orthoptères</td>
+</tr>
+<tr class="even">
+<td>NTempi_satremove</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">NTempi avec mise en NaN pour fichiers avec une saturation &gt;40 par les insectes</td>
+</tr>
+<tr class="odd">
+<td>NTempi_SATmax</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">NTempi avec mise à valeur max de NTempi (par placette) pour fichiers avec une saturation &gt;40 par les insectes</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li><strong>Facteurs météorologiques</strong></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th style="text-align: left;">Distribution valeurs</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>temperature_s2m</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Température via modèle s2m</td>
+</tr>
+<tr class="even">
+<td>radiation_direct_s2m</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Radiation via modèle s2m</td>
+</tr>
+<tr class="odd">
+<td>humidity_s2m</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Humidité via modèle s2m</td>
+</tr>
+<tr class="even">
+<td>radiation_model_emilie</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Radiation via modèle Emilie</td>
+</tr>
+<tr class="odd">
+<td>temperature_station_cor</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Température via station Ane avec ajustement des écarts relatif entre placettes via modèle opemM</td>
+</tr>
+<tr class="even">
+<td>radiation_station_cor</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Radiation via station Ane avec ajustement des écarts relatif entre placettes via modèle opemM</td>
+</tr>
+<tr class="odd">
+<td>humidity_station</td>
+<td style="text-align: left;">1 par horodatage</td>
+<td style="text-align: left;">Humidité via station Ane</td>
+</tr>
+<tr class="even">
+<td>temperature_audiomoth</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Température relevé par les audiomoths (température biaisée par radiation sur boitier)</td>
+</tr>
+<tr class="odd">
+<td>rain_s2m</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Relevé pluie via modèle s2m</td>
+</tr>
+<tr class="even">
+<td>Rain_prediction_new</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">Présence ou absense pluie via modèle ML sur enregistremet audio (AST pré-entraîné + fine-tuning sur spectrogrammes 10 s, avec optimisation du seuil de classification.</td>
+</tr>
+</tbody>
+</table>
+<ol start="5" type="1">
+<li><strong>Habitat</strong></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th style="text-align: left;">Distribution valeurs</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Iveg</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Indice de couverture végétale : Iveg=(HERB+0.5×LAND)/100 . Triés du plus herbacé → lande → minéral). A partir du relevé de Cédric Jacquier en 2025</td>
+</tr>
+<tr class="even">
+<td>Habitat</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">0 pour Prairie thermophile à fétuque paniculée; 1 pour Pelouse oligotrophe à nard (et dicotylédones) ; 2 pour Prairie eutrophe et hyperpiétinée à Rumex. (à partir du relevé de Cédric Jacquier)</td>
+</tr>
+<tr class="odd">
+<td>NDVI</td>
+<td style="text-align: left;">1 par horadatage (et placette)</td>
+<td style="text-align: left;">Phénologie de NDVI (associé à son code de qualité)</td>
+</tr>
+<tr class="even">
+<td>quality_flag</td>
+<td style="text-align: left;">1 par horadatage (et placette)</td>
+<td style="text-align: left;">Code de qualité du NDVI</td>
+</tr>
+</tbody>
+</table>
+<ol start="6" type="1">
+<li><strong>Pression pastorale</strong></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variables</th>
+<th style="text-align: left;">Distribution valeurs</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bouq_global</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">chargemnt en bouquetins.jour (via KDE) autour des capteurs acoustiques (rayon de 50m). Chargement calculé à partir des GPS de toutes les années 2017 à 2025</td>
+</tr>
+<tr class="even">
+<td>chargement_dom_<br>global_allyear</td>
+<td style="text-align: left;">1 par placette</td>
+<td style="text-align: left;">Chargement brebis·jour (via BBUD) calculé dans un rayon de 50 m autour de chaque capteur acoustique. Chargement calculé à partir des GPS de toutes les années 2018 à 2025</td>
+</tr>
+<tr class="odd">
+<td>chargement_dom_<br>global</td>
+<td style="text-align: left;">1 par placette et par année</td>
+<td style="text-align: left;">Chargement brebis·jour (via BBUD) calculé dans un rayon de 50 m autour de chaque capteur acoustique. Chargement calculé à partir des GPS de l’année concerné</td>
+</tr>
+<tr class="even">
+<td>chargement_dom_jour</td>
+<td style="text-align: left;">1 par jour (et placette)</td>
+<td style="text-align: left;">Chargement brebis·jour (via BBUD) calculé dans un rayon de 50 m autour de chaque capteur acoustique par jour</td>
+</tr>
+<tr class="odd">
+<td>presence_dom_15</td>
+<td style="text-align: left;">1 par horodatage (et placette)</td>
+<td style="text-align: left;">la présence ou l’absence du troupeau pour chaque intervalle de 15 minutes et chaque site. Une matrice de distances est calculée entre tous les points brebis et tous les sites, et la présence du troupeau est déterminée en comparant cette distance avec le rayon effectif du site (50 m + rayon de diffusion du troupeau)</td>
+</tr>
+<tr class="even">
+<td>presence_dom_jour_cum</td>
+<td style="text-align: left;">1 par jour (et placette)</td>
+<td style="text-align: left;">Présence du troupeau sur site cumulé par jour</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="figure">
 <p><img src="data/image/actihour.png" width="650" height="200"></p>
@@ -2113,7 +2468,6 @@ Activité.
 Régression logistique sur 4 variables.
 </p>
 </div>
-</section>
 </section>
 
 </main>
